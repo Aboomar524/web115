@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" type = "text/css" href = "styles/default.css">
+    <title> Ahmad Al Homair's Angelic Alligator | WEB115 | Introduction</title>
+    <script>
+        // JavaScript function to get the current page's URL
+        function getCurrentPageURL() {
+            return window.location.href;
+        }
+
+        // JavaScript function to set the validation links dynamically
+        function setValidationLinks() {
+            const currentPageURL = getCurrentPageURL();
+            const htmlValidationLink = document.getElementById('validation_link_html');
+            const cssValidationLink = document.getElementById('validation_link_css');
+
+            if (htmlValidationLink) {
+                htmlValidationLink.href = `https://validator.w3.org/nu/?doc=${encodeURIComponent(currentPageURL)}`;
+            }
+
+            if (cssValidationLink) {
+                cssValidationLink.href = `https://validator.w3.org/nu/#textarea`;
+            }
+        }
+
+        // Call the function to set validation links when the page loads
+        window.addEventListener('load', setValidationLinks);
+    </script>
+</head>
+<body>
+    <header>
+        <h1> Ahmad Al Homair's Angelic Alligator| WEB115</h1>
+		 <nav>
+    <ul>
+        <a href="index.html">Home</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="contract.html">Contract</a>
+    </ul>
+</nav>
+    </header>
+  
+    <main>
+        <h2>Introduction</h2>
+        <section id="My-Photo">
+            <figure>
+                <img src="images/alhomair.jpg" alt="Ahmad's Photo - When I passed my citizenship test" width="330" height="auto" style="object-fit: cover; object-position: center bottom;"  />
+                <figcaption><em>When I passed my citizenship test</em></figcaption>
+            </figure>
+        </section>
+       <div class="feature"><ul>
+			<li><strong>Personal background:</strong> Originally from Syria, I embarked on a journey that brought me to the United States in 2016. A new chapter unfolded as I pursued higher education, commencing my college degree at CPCC in 2019. Balancing academic pursuits with the joys of fatherhood, I am proud to be a loving parent to three wonderful children.
+</li>
+			<li><strong>Professional:</strong>Detail-oriented technical associate analyst with a proven track record in imaging and programming devices, as well as proficient installation of workstations and wireless access points. Currently, I am actively working towards completing an Associate of Applied Science in Information Technology Stack Programming at Central Piedmont Community College, further enhancing my skill set and knowledge. </li>
+			<li><strong>Background in this subject:</strong> My journey with computers commenced during my college days, fostering a passion that continues to drive my professional aspirations. The fusion of technical expertise and a dedication to continuous learning motivates me to excel in the dynamic landscape of IT.
+</li>
+			<li><strong>Primary Computer Platform::</strong> Having transitioned seamlessly to Windows 10, I am well-versed in harnessing the capabilities of modern technology for efficient and effective outcomes.
+</li>
+			
+			<li><strong>Courses I'm Taking & Why:</strong>
+			<ul>
+				<li><em><strong>WEB115 - Web Markup and Scripting: Enrolling in this course reflects my commitment to advancing my proficiency in HTML and CSS, crucial components in shaping the digital landscape.</li>
+				<li><em><strong>CSC 134 – C++ Programming language: My pursuit of this course underscores my dedication to comprehensively understanding programming languages. Exploring the depths of C++ allows me to grasp the intricacies of a renowned programming language.
+</li>
+</li>
+<li><em><strong>CTI120 - Network & Sec Foundation: My engagement in this course signifies my determination to refine my networking skills, deepen my understanding of networks, and fortify my knowledge in network security.
+</li>
+			</ul></li>
+
+<li><strong>Funny/Interesting item about yourself:</strong> Beyond my technical pursuits, I possess a deep appreciation for Middle Eastern music, an interest that underscores my diverse perspective and enriches my personal experiences.
+
+</li>
+		</ul></div>
+    </main>
+    <footer>
+      <p>
+   <a href="https://github.com/Aboomar524">github</a>
+				<a href="https://aboomar524.github.io/">github.io</a>
+				<a href="https://aboomar524.github.io/web115/">WEB115.io </a>
+				<a href="https://www.freecodecamp.org/fccbd831ee0-dd03-4049-885f-d302c9301607">freecodecamp </a>
+				<a href="https://www.codecademy.com/learn">codecademy</a>
+				<a href="https://jsfiddle.net/user/fiddles/all/">jsfiddle</a>
+				<a href="https://www.linkedin.com/in/ahmad-al-homair/">LinkedIn</a>
+</p>
+<div class="validate">	
+			<a href="#" id="validation_link_html" class="small-link">Validate HTML</a>
+		
+			<a href="#" id="validation_link_css" class="small-link">Validate CSS</a>
+		
+			</a>
+		
+		</div>
+
+         <p><em> Designed by Ahmad Alhomair &copy; 2023.</em></p>
+		 
+</body>
+</html>
