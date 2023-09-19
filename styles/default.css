@@ -7,7 +7,7 @@ header {
     justify-content: space-between;
 }
 
-nav ul a {
+nav a {
     font-size: 30px;
     margin-right: 20px;
     padding-right: 20px;
@@ -36,7 +36,7 @@ a:hover {
 }
 
 body {
-    background-color: rgb(56, 50, 50);
+    background-color: #d3d3d3;
     color: rgb(0, 160, 200);
     font-family: Callibri, Arial, sans-serif;
 }
@@ -65,7 +65,7 @@ figcaption {
 footer {
     background-color: #01FF70;
     width: 100%;
-    font-size: 200%;
+    font-size: 150%;
     text-align: center;
     justify-content: space-between;
 }
