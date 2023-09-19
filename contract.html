@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Course contract for WEB115-01 Web Markup & Scripting - Fall 2023">
-    <link rel="stylesheet" type="text/css" href="styles/default.css">
-    <title> Ahmad Al Homair's Angelic Alligator | WEB115 | Course Contract</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Course contract for WEB115-01 Web Markup & Scripting - Fall 2023" />
+    <link rel="stylesheet" type="text/css" href="styles/default.css" />
+    <title>Ahmad Alhomair's Angelic Alligator | WEB115 | Course Contract</title>
     <script>
         function getCurrentPageURL() {
             return window.location.href;
@@ -14,11 +14,17 @@
 
         function setValidationLinks() {
             const currentPageURL = getCurrentPageURL();
-            const htmlValidationLink = document.getElementById('validation_link_html');
-            const cssValidationLink = document.getElementById('validation_link_css');
+            const htmlValidationLink = document.getElementById(
+                "validation_link_html"
+            );
+            const cssValidationLink = document.getElementById(
+                "validation_link_css"
+            );
 
             if (htmlValidationLink) {
-                htmlValidationLink.href = `https://validator.w3.org/nu/?doc=${encodeURIComponent(currentPageURL)}`;
+                htmlValidationLink.href = `https://validator.w3.org/nu/?doc=${encodeURIComponent(
+            currentPageURL
+          )}`;
             }
 
             if (cssValidationLink) {
@@ -26,22 +32,19 @@
             }
         }
 
-        window.addEventListener('load', setValidationLinks);
+        window.addEventListener("load", setValidationLinks);
     </script>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="introduction.html">Introduction</a>
-                <a href="contract.html">Contract</a>
-                <a href="brand.html">Brand</a>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="introduction.html">Introduction</a>
+            <a href="contract.html">Contract</a>
+            <a href="brand.html">Brand</a>
         </nav>
-        <h1>Ahmad Al Homair's Angelic Alligator | WEB115</h1>
-
+        <h1>Ahmad Alhomair's Angelic Alligator | WEB115</h1>
     </header>
 
     <main>
@@ -55,31 +58,27 @@
         <p>
             I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences.
         </p>
-        <p>
-            Signed: <em>Ahmad Al Homair, 09/09/2023</em>
-        </p>
+        <p>Signed: <em>Ahmad Al Homair, 09/09/2023</em></p>
     </main>
     <footer>
         <p>
             <a href="https://github.com/Aboomar524">github</a>
             <a href="https://aboomar524.github.io/">github.io</a>
             <a href="https://aboomar524.github.io/web115/">WEB115.io </a>
-            <a href="https://www.freecodecamp.org/fccbd831ee0-dd03-4049-885f-d302c9301607">freecodecamp </a>
+            <a href="https://www.freecodecamp.org/fccbd831ee0-dd03-4049-885f-d302c9301607">freecodecamp
+        </a>
             <a href="https://www.codecademy.com/learn">codecademy</a>
             <a href="https://jsfiddle.net/user/fiddles/all/">jsfiddle</a>
             <a href="https://www.linkedin.com/in/ahmad-al-homair/">LinkedIn</a>
         </p>
         <div class="validate">
-            <a href="#" id="validation_link_html" class="small-link">Validate HTML</a>
+            <a href="#" id="validation_link_html" class="small-link">Validate HTML</a
+        >
 
-            <a href="#" id="validation_link_css" class="small-link">Validate CSS</a>
-
-            </a>
-
+        <a href="#" id="validation_link_css" class="small-link">Validate CSS</a>
         </div>
 
         <p><em> Designed by Ahmad Alhomair &copy; 2023.</em></p>
-
     </footer>
 </body>
 

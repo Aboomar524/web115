@@ -41,40 +41,6 @@ body {
     font-family: Callibri, Arial, sans-serif;
 }
 
-.
-/* Style the horizontal menu */
-
-.horizontal-menu {
-    list-style: none;
-    /* Remove default list bullets */
-    display: flex;
-    /* Display items horizontally */
-    justify-content: space-around;
-    /* Distribute items evenly */
-}
-
-
-/* Style the horizontal menu */
-
-.horizontal-menu {
-    list-style: none;
-    /* Remove default list bullets */
-    display: flex;
-    /* Display items horizontally */
-    justify-content: space-around;
-    /* Distribute items evenly */
-}
-
-.horizontal-menu li {
-    margin-right: 20px;
-    /* Adjust the spacing between menu items */
-}
-
-.horizontal-menu a {
-    text-decoration: none;
-    /* Remove underline from links */
-}
-
 #My-Photo {
     display: flex;
     justify-content: center;
