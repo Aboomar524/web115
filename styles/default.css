@@ -8,94 +8,111 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 200px;
-    nav {
-        color: #f45f3a;
-        text-decoration: none;
-        font-size: 1.1em;
-        font-weight: 700;
-        padding-left: 30px;
-    }
-    a {
-        font-size: 14px;
-        color: #8B0000;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #DC143C;
-    }
-    .small-link {
-        font-size: 14px;
-    }
-    body {
-        background-color: rgb(56, 50, 50);
-        color: rgb(0, 160, 200);
-        font-family: Callibri, Arial, sans-serif;
-    }
-    ./* Style the horizontal menu */
-    .horizontal-menu {
-        list-style: none;
-        /* Remove default list bullets */
-        display: flex;
-        /* Display items horizontally */
-        justify-content: space-around;
-        /* Distribute items evenly */
-    }
-    /* Style the horizontal menu */
-    .horizontal-menu {
-        list-style: none;
-        /* Remove default list bullets */
-        display: flex;
-        /* Display items horizontally */
-        justify-content: space-around;
-        /* Distribute items evenly */
-    }
-    .horizontal-menu li {
-        margin-right: 20px;
-        /* Adjust the spacing between menu items */
-    }
-    .horizontal-menu a {
-        text-decoration: none;
-        /* Remove underline from links */
-    }
-    #My-Photo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #profile-image img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    figure {
-        text-align: center;
-        /* Center the content horizontally */
-    }
-    figcaption {
-        font-style: italic;
-        /* Make the caption italic, if desired */
-    }
-    footer {
-        background-color: #f0f0f0;
-        width: 100%;
-        font-size: 200%;
-        text-align: center;
-        justify-content: space-between;
-    }
+}
+
+nav {
+    color: #f45f3a;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+a {
+    font-size: 14px;
+    color: #8B0000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DC143C;
+}
+
+.small-link {
+    font-size: 14px;
+}
+
+body {
+    background-color: rgb(56, 50, 50);
+    color: rgb(0, 160, 200);
+    font-family: Callibri, Arial, sans-serif;
+}
+
+.
+/* Style the horizontal menu */
+
+.horizontal-menu {
+    list-style: none;
+    /* Remove default list bullets */
+    display: flex;
+    /* Display items horizontally */
+    justify-content: space-around;
+    /* Distribute items evenly */
+}
+
+
+/* Style the horizontal menu */
+
+.horizontal-menu {
+    list-style: none;
+    /* Remove default list bullets */
+    display: flex;
+    /* Display items horizontally */
+    justify-content: space-around;
+    /* Distribute items evenly */
+}
+
+.horizontal-menu li {
+    margin-right: 20px;
+    /* Adjust the spacing between menu items */
+}
+
+.horizontal-menu a {
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+#My-Photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-image img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 figure {
-    float: right;
+    text-align: center;
+    /* Center the content horizontally */
 }
 
+figcaption {
+    font-style: italic;
+    /* Make the caption italic, if desired */
+}
+
+footer {
+    background-color: #f0f0f0;
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+}
+figure {
+    float: right;
+}
 img#photo {
     height: 500px;
     width: auto;
 }
-
 Baklva {
     margin-Left: 30px;
 }
-
 Moshakel {
     margin-right: 30px;
 }
