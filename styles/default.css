@@ -9,6 +9,8 @@ header {
 
 nav ul a {
     font-size: 30px;
+    margin-right: 20px;
+    padding-right: 20px;
 }
 
 nav {
