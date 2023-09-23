@@ -1,87 +1,136 @@
-@charset "utf-8";
+/* Reset some default browser styles */
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+figure,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Apply a background color and default font to the entire page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D3D3D3;
+}
+
+
+/* Style the header */
+
 header {
-    background-color: #01FF70;
-    width: 100%;
-    font-size: 100%;
+    background-color: #ffcc00;
+    /* Yellow background */
+    color: #333;
+    /* Blue font color */
     text-align: center;
-    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #333;
+    /* Blue font color */
+}
+
+
+/* Style the navigation */
+
+nav {
+    text-align: center;
 }
 
 nav a {
-    font-size: 30px;
-    margin-right: 20px;
-    padding-right: 20px;
-}
-
-nav {
-    color: #f45f3a;
     text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 700;
-    padding-left: 30px;
+    color: #333;
+    /* Blue font color */
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    /* Yellow background */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-a {
-    font-size: 14px;
-    color: #8B0000;
-    text-decoration: none;
+nav a:hover {
+    background-color: #333;
+    /* Blue background on hover */
+    color: #ffcc00;
+    /* Yellow font color on hover */
 }
 
-a:hover {
-    color: #DC143C;
+
+/* Style the main content */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.small-link {
-    font-size: 14px;
-}
-
-body {
-    background-color: #d3d3d3;
-    color: rgb(0, 160, 200);
-    font-family: Callibri, Arial, sans-serif;
-}
-
-#My-Photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#profile-image img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-figure {
+main figure {
+    margin: 0 0 20px;
     text-align: center;
-    /* Center the content horizontally */
 }
 
-figcaption {
-    font-style: italic;
-    /* Make the caption italic, if desired */
+main figure img {
+    max-width: 100%;
+    height: auto;
 }
+
+
+/* Style the footer */
 
 footer {
-    background-color: #01FF70;
-    width: 100%;
-    font-size: 150%;
+    background-color: #ffcc00;
+    /* Yellow background */
+    color: #333;
+    /* Blue font color */
     text-align: center;
-    justify-content: space-between;
+    padding: 20px 0;
+    line-height: 1.5;
+    /* Increased line spacing */
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    /* Blue font color */
+    margin: 0 10px;
 }
 
 
+/* Style the validation links */
+
+.small-link {
+    text-decoration: none;
+    color: #333;
+    /* Blue font color */
+    background-color: #ffcc00;
+    /* Yellow background */
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 20px;
 }
-figure {
-    float: right;
+
+.contract-text {
+    font-family: Corbel, sans-serif;
+    /* Specify the desired font-family */
+    /* You can also add other font properties like font-size, font-weight, etc. */
 }
-img#photo {
-    height: 500px;
-    width: auto;
-}
-Baklva {
-    margin-Left: 30px;
-}
-Moshakel {
-    margin-right: 30px;
+
+.small-link:hover {
+    background-color: #333;
+    /* Blue background on hover */
+    color: #ffcc00;
+    /* Yellow font color on hover */
 }
