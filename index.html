@@ -8,32 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="styles/default.css">
     <title> Ahmad Al Homair's Angelic Alligator | WEB115 Syrin Desserts</title>
-    <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
-    <script defer src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js"></script>
-    <script>
-        // JavaScript function to get the current page's URL
-        function getCurrentPageURL() {
-            return window.location.href;
-        }
-
-        // JavaScript function to set the validation links dynamically
-        function setValidationLinks() {
-            const currentPageURL = getCurrentPageURL();
-            const htmlValidationLink = document.getElementById('validation_link_html');
-            const cssValidationLink = document.getElementById('validation_link_css');
-
-            if (htmlValidationLink) {
-                htmlValidationLink.href = `https://validator.w3.org/nu/?doc=${encodeURIComponent(currentPageURL)}`;
-            }
-
-            if (cssValidationLink) {
-                cssValidationLink.href = `https://validator.w3.org/nu/#textarea`;
-            }
-        }
-
-        // Call the function to set validation links when the page loads
-        window.addEventListener('load', setValidationLinks);
-    </script>
+    <script defer src="validation.js"></script>
 
 </head>
 
