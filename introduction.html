@@ -66,24 +66,43 @@
             </ul>
         </div>
     </main>
-    <footer>
+    < <footer>
         <nav>
             <a href="https://github.com/Aboomar524">github</a>
             <a href="https://aboomar524.github.io/">github.io</a>
-            <a href="https://aboomar524.github.io/web115/">WEB115.io</a>
-            <a href="https://www.freecodecamp.org/fccbd831ee0-dd03-4049-885f-d302c9301607">freecodecamp</a
-        >
-        <a href="https://www.codecademy.com/learn">codecademy</a>
+            <a href="https://aboomar524.github.io/web115/">WEB115.io </a>
+            <a href="https://www.freecodecamp.org/fccbd831ee0-dd03-4049-885f-d302c9301607">freecodecamp
+        </a>
+            <a href="https://www.codecademy.com/learn">codecademy</a>
             <a href="https://jsfiddle.net/user/fiddles/all/">jsfiddle</a>
             <a href="https://www.linkedin.com/in/ahmad-al-homair/">LinkedIn</a>
         </nav>
+        <p></p>
         <p>
-            <a href="#" id="validation_link_html" class="small-link">Validate HTML</a
-        >
-        <a href="#" id="validation_link_css" class="small-link">Validate CSS</a>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." />
+            </a>
+
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." />
+            </a>
         </p>
-        <p><em>Designed by Ahmad Alhomair &copy; 2024.</em></p>
-    </footer>
+        <script>
+            document
+                .getElementById("validation_link_html")
+                .setAttribute(
+                    "href",
+                    "https://validator.w3.org/check?uri=" + location.href
+                );
+            document
+                .getElementById("validation_link_css")
+                .setAttribute(
+                    "href",
+                    "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+                );
+        </script>
+        <p><em> Designed by Ahmad Alhomair &copy;2024.</em></p>
+        </footer>
 </body>
 
 </html>
