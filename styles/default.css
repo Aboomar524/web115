@@ -1,172 +1,179 @@
-html,
-body,
-h1,
-h2,
-h3,
-p,
-figure,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #D3D3D3;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-header {
-    background-color: #ffcc00;
-    color: #333;
-    text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    font-size: 36px;
-    margin: 10px 0;
-    color: #333;
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #ffcc00;
-    transition: background-color 0.3s, color 0.3s;
-    margin: 0 5px;
-    /* Add space between navigation links */
-    display: inline-block;
-    /* Display navigation links inline */
-}
-
-nav a:hover {
-    background-color: #333;
-    color: #ffcc00;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-main figure {
-    margin: 0 0 20px;
-    text-align: center;
-}
-
-main figure img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* Style the footer */
-
-footer {
-    background-color: #ffcc00;
-    color: #333;
-    text-align: center;
-    padding: 20px 0;
-    line-height: 1.5;
-    /* Increased line spacing */
-}
-
-footer a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 10px;
-}
-
-
-/* Style the validation links */
-
-.small-link {
-    text-decoration: none;
-    color: #333;
-    background-color: #ffcc00;
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin-top: 20px;
-}
-
-.small-link:hover {
-    background-color: #333;
-    color: #ffcc00;
-}
-
-
-/* Color Scheme Section */
-
-h3 {
-    background-color: #0d1f2dff;
-    border-radius: 5px;
-    color: #fff;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.dots {
-    text-align: center;
-}
-
-.dots span {
-    display: inline-block;
-    margin: 10px;
-}
-
-.dots label {
-    display: block;
-    color: #333;
-    font-size: 14px;
-}
-
-
-/* Fonts Section */
-
-.gallery h3 {
-    background-color: #0d1f2dff;
-    border-radius: 5px;
-    color: #fff;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.gallery p {
-    font-family: Constantia, serif;
-    background-color: #fae1dfff;
-    border-radius: 5px;
-    color: #0d1f2dff;
-    padding: 10px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.color-rectangle {
-    display: inline-block;
-    width: 100px;
-    height: 60px;
-    margin: 5px;
-    border: 1px solid #000;
-    text-align: center;
-}
-
-.color-code {
-    font-size: 18px;
-    line-height: 60px;
-    color: #fff;
-}
+                html,
+                body,
+                h1,
+                h2,
+                h3,
+                p,
+                figure,
+                ul,
+                li {
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                div.feature {
+                    text-align: left;
+                    line-height: 2;
+                }
+                
+                ul ul {
+                    padding-left: 20px;
+                    /* هذه القيمة تضيف مسافة بادئة للقائمة الفرعية */
+                }
+                
+                ul ul li {
+                    margin-bottom: 5px;
+                    /* إضافة مسافة بين العناصر الفرعية (اختياري) */
+                }
+                
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #D3D3D3;
+                    line-height: 1.6;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+                
+                header {
+                    background-color: #ffcc00;
+                    color: #333;
+                    text-align: center;
+                    padding: 20px 0;
+                }
+                
+                header h1 {
+                    font-size: 36px;
+                    margin: 10px 0;
+                    color: #333;
+                }
+                
+                nav ul {
+                    list-style-type: none;
+                    text-align: center;
+                }
+                
+                nav a {
+                    text-decoration: none;
+                    color: #333;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    background-color: #ffcc00;
+                    transition: background-color 0.3s, color 0.3s;
+                    margin: 0 5px;
+                    /* Add space between navigation links */
+                    display: inline-block;
+                    /* Display navigation links inline */
+                }
+                
+                nav a:hover {
+                    background-color: #333;
+                    color: #ffcc00;
+                }
+                
+                main {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    background-color: #f0f0f0;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                }
+                
+                main figure {
+                    margin: 0 0 20px;
+                    text-align: center;
+                }
+                
+                main figure img {
+                    max-width: 100%;
+                    height: auto;
+                }
+                /* Style the footer */
+                
+                footer {
+                    background-color: #ffcc00;
+                    color: #333;
+                    text-align: center;
+                    padding: 20px 0;
+                    line-height: 1.5;
+                    /* Increased line spacing */
+                }
+                
+                footer a {
+                    text-decoration: none;
+                    color: #333;
+                    margin: 0 10px;
+                }
+                /* Style the validation links */
+                
+                .small-link {
+                    text-decoration: none;
+                    color: #333;
+                    background-color: #ffcc00;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    margin-top: 20px;
+                }
+                
+                .small-link:hover {
+                    background-color: #333;
+                    color: #ffcc00;
+                }
+                /* Color Scheme Section */
+                
+                h3 {
+                    background-color: #0d1f2dff;
+                    border-radius: 5px;
+                    color: #fff;
+                    padding: 10px;
+                    margin-top: 20px;
+                }
+                
+                .dots {
+                    text-align: center;
+                }
+                
+                .dots span {
+                    display: inline-block;
+                    margin: 10px;
+                }
+                
+                .dots label {
+                    display: block;
+                    color: #333;
+                    font-size: 14px;
+                }
+                /* Fonts Section */
+                
+                .gallery h3 {
+                    background-color: #0d1f2dff;
+                    border-radius: 5px;
+                    color: #fff;
+                    padding: 10px;
+                    margin-top: 20px;
+                }
+                
+                .gallery p {
+                    font-family: Constantia, serif;
+                    background-color: #fae1dfff;
+                    border-radius: 5px;
+                    color: #0d1f2dff;
+                    padding: 10px;
+                    margin-top: 20px;
+                    text-align: center;
+                }
+                
+                .color-rectangle {
+                    display: inline-block;
+                    width: 100px;
+                    height: 60px;
+                    margin: 5px;
+                    border: 1px solid #000;
+                    text-align: center;
+                }
+                
+                .color-code {
+                    font-size: 18px;
+                    line-height: 60px;
+                    color: #fff;
+                }
