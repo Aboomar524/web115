@@ -170,8 +170,6 @@ h3 {
 
 .color-rectangle {
     display: inline-block;
-    width: 100px;
-    height: 60px;
     margin: 5px;
     border: 1px solid;
     text-align: center;
