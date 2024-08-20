@@ -1,3 +1,5 @@
+/* Global reset */
+
 html,
 body,
 h1,
@@ -11,14 +13,25 @@ li {
     padding: 0;
 }
 
+
+/* Box sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Body styles */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #D3D3D3;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
+
+
+/* Header styles */
 
 header {
     background-color: #ffcc00;
@@ -26,6 +39,9 @@ header {
     text-align: center;
     padding: 20px 0;
 }
+
+
+/* Navigation styles */
 
 nav ul {
     list-style-type: none;
@@ -48,6 +64,9 @@ nav a:hover {
     color: #ffcc00;
 }
 
+
+/* Main content styles */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -66,6 +85,9 @@ main figure img {
     height: auto;
 }
 
+
+/* Footer styles */
+
 footer {
     background-color: #ffcc00;
     color: #333;
@@ -79,6 +101,9 @@ footer a {
     color: #333;
     margin: 0 10px;
 }
+
+
+/* Small link styles */
 
 .small-link {
     text-decoration: none;
@@ -94,6 +119,9 @@ footer a {
     color: #ffcc00;
 }
 
+
+/* Header styles for h3 */
+
 h3 {
     background-color: #0d1f2d;
     border-radius: 5px;
@@ -101,6 +129,9 @@ h3 {
     padding: 10px;
     margin-top: 20px;
 }
+
+
+/* Dots class styles */
 
 .dots {
     text-align: center;
@@ -116,6 +147,9 @@ h3 {
     color: #333;
     font-size: 14px;
 }
+
+
+/* Gallery styles */
 
 .gallery h3 {
     background-color: #0d1f2d;
@@ -134,6 +168,9 @@ h3 {
     margin-top: 20px;
     text-align: center;
 }
+
+
+/* Color rectangle styles */
 
 .color-rectangle {
     display: inline-block;
