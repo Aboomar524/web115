@@ -1,22 +1,18 @@
-/* Global reset */
+/* Apply box-sizing to major container elements */
 
 html,
 body,
-h1,
-h2,
-h3,
-p,
+div,
+section,
+article,
+header,
+footer,
+nav,
+main,
 figure,
 ul,
-li {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* Box sizing */
-
-* {
+li,
+p {
     box-sizing: border-box;
 }
 
