@@ -55,30 +55,6 @@ function addHeader() {
     }
 }
 
-function addSubHead() {
-    // Add subheader at the top of the main element only to fizzbuzz pages
-    if (document.getElementById("buzz")) {
-        const main = document.getElementById("buzz");
-
-        // Add hr line
-        const line = document.createElement("hr");
-        main.prepend(line);
-
-        // Add nav container
-        const nav = document.createElement("nav");
-        main.prepend(nav);
-
-        // Add navigation links
-        fetch('scripts/navLinks.json')
-            .then(res => res.json())
-            .then(data => {
-                const subHeaderFBLinks = data.subHeaderFBLinks;
-                navBar(nav, subHeaderFBLinks.names, subHeaderFBLinks.hrefs);
-            })
-            .catch(error => console.log(error));
-    }
-}
-
 function addFooter() {
     // Create footer element at the end of the body
     const footer = document.createElement("footer");
