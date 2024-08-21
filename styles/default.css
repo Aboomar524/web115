@@ -24,6 +24,8 @@ body {
     background-color: #D3D3D3;
     line-height: 1.6;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -41,7 +43,7 @@ header {
 
 nav ul {
     list-style-type: none;
-    text-align: center;
+    padding: 0;
 }
 
 nav a {
@@ -69,15 +71,41 @@ main {
     padding: 20px;
     background-color: #f0f0f0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    /* Adjust text alignment */
 }
 
-main figure {
-    margin: 0 0 20px;
+
+/* Introduction section */
+
+.introduction {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    /* Center text in the introduction section */
 }
 
-main figure img {
+.introduction h2 {
+    color: #0d1f2d;
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+
+/* Center the introduction image */
+
+.introduction img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
+    /* Ensure the image is responsive */
     height: auto;
 }
 
