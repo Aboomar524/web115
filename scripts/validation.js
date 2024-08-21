@@ -1,4 +1,4 @@
-// generate navigation bar using 3 arguments
+// Generate navigation bar using 3 arguments
 function navBar(nav, linkNames, linkHREFs) {
     for (let i = 0; i < linkNames.length; i++) {
         let link = document.createElement("a");
@@ -9,28 +9,28 @@ function navBar(nav, linkNames, linkHREFs) {
 }
 
 function addHeader() {
-    // create header element at top of body
+    // Create header element at the top of the body
     const header = document.createElement("header");
     document.body.prepend(header);
 
-    // add name and course heading
+    // Add name and course heading
     const h1 = document.createElement("h1");
-    const name = "Ben Ferrell";
-    const mascot = "Boost Falcon";
+    const name = "Ahmad Alhomair";
+    const mascot = "Angelic Alligator";
     const course = "WEB115";
     h1.innerHTML = `${name}'s ${mascot} | ${course}`;
     header.append(h1);
 
-    // add banner with slogan
+    // Add banner with slogan
     const sloganBanner = document.createElement("h3");
     sloganBanner.innerHTML = "<em>Sail the Stars in Style</em>";
     header.append(sloganBanner);
 
-    // add nav container
+    // Add nav container
     const nav = document.createElement("nav");
     header.append(nav);
 
-    // add first link as a logo
+    // Add first link as a logo
     const logoLink = document.createElement("a");
     logoLink.href = "index.html";
     logoLink.classList.add("logo");
@@ -39,84 +39,83 @@ function addHeader() {
     logoLink.appendChild(logo);
     nav.appendChild(logoLink);
 
-    // add navigation links
-
+    // Add navigation links
     fetch('scripts/navLinks.json')
-        .then(res => { return res.json() })
+        .then(res => res.json())
         .then(data => {
-            const headerLinks = data.headerLinks
+            const headerLinks = data.headerLinks;
             navBar(nav, headerLinks.names, headerLinks.hrefs);
         })
-        .catch(error => console.log(error))
+        .catch(error => console.log(error));
 
-    // add hr line on non-fizzbuzz pages
-    if (!(document.getElementById("buzz"))) {
+    // Add hr line on non-fizzbuzz pages
+    if (!document.getElementById("buzz")) {
         const line = document.createElement("hr");
         header.append(line);
     }
 }
 
 function addSubHead() {
-    // add subheader at top of main only to fizzbuzz pages
+    // Add subheader at the top of the main element only to fizzbuzz pages
     if (document.getElementById("buzz")) {
-        const main = document.getElementById("buzz")
+        const main = document.getElementById("buzz");
 
-        // add hr line
+        // Add hr line
         const line = document.createElement("hr");
         main.prepend(line);
 
-        // add nav container
-        const nav = document.createElement("nav")
-        main.prepend(nav)
+        // Add nav container
+        const nav = document.createElement("nav");
+        main.prepend(nav);
 
-        // add navigation links
+        // Add navigation links
         fetch('scripts/navLinks.json')
-            .then(res => { return res.json() })
+            .then(res => res.json())
             .then(data => {
-                const subHeaderFBLinks = data.subHeaderFBLinks
+                const subHeaderFBLinks = data.subHeaderFBLinks;
                 navBar(nav, subHeaderFBLinks.names, subHeaderFBLinks.hrefs);
             })
-            .catch(error => console.log(error))
+            .catch(error => console.log(error));
     }
 }
 
 function addFooter() {
-    // create footer element at end of body
+    // Create footer element at the end of the body
     const footer = document.createElement("footer");
     document.body.append(footer);
 
-    // add hr line
+    // Add hr line
     const line = document.createElement("hr");
     footer.append(line);
 
-    // add nav container
+    // Add nav container
     const nav = document.createElement("nav");
     footer.append(nav);
 
-    // add navigation links
+    // Add navigation links
     fetch('scripts/navLinks.json')
-        .then(res => { return res.json() })
+        .then(res => res.json())
         .then(data => {
-            const footerLinks = data.footerLinks
+            const footerLinks = data.footerLinks;
             navBar(nav, footerLinks.names, footerLinks.hrefs);
         })
-        .catch(error => console.log(error))
+        .catch(error => console.log(error));
 
-    // add signature
-    const sigContent = `Designed by <strong>&copy;Mithril WebForge</strong> - <em>Renowned Across the Multiverse</em>`;
+    // Add signature
+    const sigContent = `Designed by <strong>&copy; Ahmad Alhomair</strong> - <em>2024</em>`;
     const signature = document.createElement("p");
     signature.innerHTML = sigContent;
     footer.append(signature);
 
-    // add validation block
+    // Add validation block
     const validationBlock = document.createElement("div");
     validationBlock.classList.add("validate");
     footer.append(validationBlock);
 
     fetch('scripts/navLinks.json')
-        .then(res => { return res.json() })
+        .then(res => res.json())
         .then(data => {
-            const validationLinks = data.validationLinks
+            const validationLinks = data.validationLinks;
             for (let i = 0; i < validationLinks.names.length; i++) {
                 let link = document.createElement("a");
                 link.innerHTML = validationLinks.names[i];
@@ -124,14 +123,15 @@ function addFooter() {
                 link.setAttribute("id", validationLinks.ids[i]);
                 validationBlock.append(link);
             }
-            // update validation links based on the current page
-            document.getElementById("validation-link-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validation-link-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            // Update validation links based on the current page
+            document.getElementById("validation-link-html").setAttribute("href", "https://validator.w3.org/check?uri=" + encodeURIComponent(location.href));
+            document.getElementById("validation-link-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(location.href));
         })
-        .catch(error => console.log(error))
+        .catch(error => console.log(error));
 }
 
-window.onload =
+window.onload = function() {
     addHeader();
-addSubHead();
-addFooter();
+    addSubHead();
+    addFooter();
+};
