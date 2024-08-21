@@ -35,7 +35,7 @@ header {
     background-color: #ffcc00;
     color: #333;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px2;
 }
 
 
@@ -72,7 +72,10 @@ main {
     background-color: #f0f0f0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
-    /* Adjust text alignment */
+}
+
+h2 {
+    text-align: center;
 }
 
 
@@ -124,6 +127,35 @@ footer a {
     text-decoration: none;
     color: #333;
     margin: 0 10px;
+}
+
+#My-Photo {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically (optional) */
+    text-align: center;
+    /* Center text inside the figure */
+    padding: 20px;
+    /* Optional: adds space around the section */
+}
+
+#My-Photo figure {
+    margin: 0;
+    /* Remove default margin */
+}
+
+#My-Photo img {
+    max-width: 100%;
+    /* Ensure the image does not exceed the container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+#My-Photo figcaption {
+    margin-top: 10px;
+    /* Space between image and caption */
 }
 
 
