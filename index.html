@@ -10,6 +10,25 @@
     <title>Ahmad Al Homair's Angelic Alligator | WEB115 | Home</title>
     <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
 </head>
+<script>
+    // script.js
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var htmlValidationLink = document.getElementById("validation_link_html");
+        htmlValidationLink.setAttribute(
+            "href",
+            "https://validator.w3.org/check?uri=" +
+            encodeURIComponent(location.href)
+        );
+
+        var cssValidationLink = document.getElementById("validation_link_css");
+        cssValidationLink.setAttribute(
+            "href",
+            "https://jigsaw.w3.org/css-validator/validator?uri=" +
+            encodeURIComponent(location.href)
+        );
+    });
+</script>
 
 <body>
     <header>
