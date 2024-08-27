@@ -10,29 +10,7 @@
 </head>
 
 <body>
-    <header>
-        <h1>Ahmad Alhomair 's Angelic Alligator | WEB115</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home
-</a>
-                </li>
-                <li>
-                    <a href="introduction.html">Introduction
-</a>
-                </li>
-                <li>
-                    <a href="contract.html">Contract
-</a>
-                </li>
-                <li>
-                    <a href="brand.html">Brand
-</a>
-                </li>
-            </ul>
-            </nav>
-    </header>
+    <div data-include="components/header.html" data-replace="%courseTitle%:, %pageTitle%: | Course Contract"></div>
     <main>
                    <h2>Course Contract
             </h2>
@@ -55,38 +33,7 @@
             </p>
         </main>
 
-        <footer>
-            <nav>
-                <a href="https://github.com/Aboomar524">github
-</a>
-                <a href="https://aboomar524.github.io/">github.io
-</a>
-                <a href="https://aboomar524.github.io/web115/">WEB115.io
-</a>
-                <a href="https://www.freecodecamp.org/fccbd831ee0-dd03-4049-885f-d302c9301607">
-freecodecamp
-</a>
-                <a href="https://www.codecademy.com/learn">codecademy
-</a>
-                <a href="https://jsfiddle.net/user/fiddles/all/">
-jsfiddle
-</a>
-                <a href="https://www.linkedin.com/in/ahmad-al-homair/">
-LinkedIn
-</a>
-                </nav>
-                    <p>
-                        Designed by Ahmad Alhomair - All Rights Reserved &copy;2024
-                    </p> <br>
-                        <p>
-                            <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
-                                <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
-                            </a>
-                            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
-                                <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
-                            </a>
-                            </p>
-        </footer>
+        <div data-include="components/footer.html"></div>  
         <script>
             var htmlValidationLink = document.getElementById( "validation-link-html" ); 
             htmlValidationLink.setAttribute( "href", "https://validator.w3.org/check?uri=" + encodeURIComponent(location.href) );
