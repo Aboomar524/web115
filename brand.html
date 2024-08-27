@@ -27,7 +27,7 @@
     </header>
 
     <main>
-      <h2>Brand Statement</h2>
+      <h2>Brand Board</h2>
       <figure>
         <img src="images/logo.png" alt="SweetSyria Logo">
         <figcaption><em>Syrian Sweet</em></figcaption>
@@ -123,5 +123,12 @@ LinkedIn
                       </a>
                       </p>
   </footer>
+  <script>
+    var htmlValidationLink = document.getElementById( "validation-link-html" ); 
+    htmlValidationLink.setAttribute( "href", "https://validator.w3.org/check?uri=" + encodeURIComponent(location.href) );
+    
+    var cssValidationLink = document.getElementById("validation-link-css"); 
+    cssValidationLink.setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(location.href));
+  </script>
   </body>
 </html>
