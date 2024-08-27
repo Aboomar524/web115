@@ -55,6 +55,10 @@ header {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 .cover-image {
     object-fit: cover;
     object-position: center;
