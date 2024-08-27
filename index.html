@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div data-include="components/header.html" data-replace="%courseTitle%:, %pageTitle%: | Course Contract"></div>
+    <div data-include="components/header.html"></div>
     <main>
         <h2>Welcome to Syrian Sweets</h2>
         <section id="featured-desserts">
@@ -30,7 +30,27 @@
         
         var cssValidationLink = document.getElementById("validation-link-css"); 
         cssValidationLink.setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(location.href));
+        document.addEventListener("DOMContentLoaded", function() {
+        var includes = document.querySelectorAll('[data-include]');
+        includes.forEach(function(include) {
+            var file = include.getAttribute("data-include");
+            fetch(file)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    include.innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+        });
+    });
       </script>
+       
 </body>
 
 </html>
