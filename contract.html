@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" type="text/css" href="styles/default.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
     <title>Ahmad Al Homair's Angelic Alligator | WEB115 | Course Contract</title>
-	<script defer src="validation.js"></script>
+    <script defer src="validation.js"></script>
 </head>
 
 <body>
@@ -23,11 +23,11 @@
     </header>
 
     <main>
-       <main>
-        <h2>Course Contract</h2>
-        <p>
-            I,
-            <span class="contract-text"><a href="introduction.html">Ahmad Alhomair</a></span
+        <main>
+            <h2>Course Contract</h2>
+            <p>
+                I,
+                <span class="contract-text"><a href="introduction.html">Ahmad Alhomair</a></span
         >, agree to abide by the terms in my Fall 2024 WEB115-01 Web Markup &
         Scripting course with my instructor, D.I. von Briesen.
       </p>
@@ -93,6 +93,25 @@
         </nav>
 		
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var htmlValidationLink = document.getElementById(
+              "validation-link-html"
+          );
+          htmlValidationLink.setAttribute(
+              "href",
+              "https://validator.w3.org/check?uri=" +
+              encodeURIComponent(location.href)
+          );
+
+          var cssValidationLink = document.getElementById("validation-link-css");
+          cssValidationLink.setAttribute(
+              "href",
+              "https://jigsaw.w3.org/css-validator/validator?uri=" +
+              encodeURIComponent(location.href)
+          );
+      });
+  </script>
 </body>
 
 </html>
