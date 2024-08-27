@@ -140,18 +140,11 @@
          </p>
       </footer>
       <script>
-         document.addEventListener("DOMContentLoaded", function() { var htmlValidationLink = document.getElementById( "validation-link-html" ); htmlValidationLink.setAttribute( "href", "https://validator.w3.org/check?uri=" + encodeURIComponent(location.href) );
-         var
-         cssValidationLink
-         =
-         document.getElementById("validation-link-css");
-         cssValidationLink.setAttribute(
-         "href",
-         "https://jigsaw.w3.org/css-validator/validator?uri="
-         +
-         encodeURIComponent(location.href)
-         );
-         });
+        var htmlValidationLink = document.getElementById( "validation-link-html" ); 
+        htmlValidationLink.setAttribute( "href", "https://validator.w3.org/check?uri=" + encodeURIComponent(location.href) );
+        
+        var cssValidationLink = document.getElementById("validation-link-css"); 
+        cssValidationLink.setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(location.href));
       </script>
    </body>
 </html>
