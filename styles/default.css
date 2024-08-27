@@ -46,6 +46,11 @@ header {
     text-align: center;
 }
 
+.cover-image {
+    object-fit: cover;
+    object-position: center;
+}
+
 
 /* Navigation */
 
