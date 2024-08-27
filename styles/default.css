@@ -25,7 +25,8 @@
     main,
     footer {
         max-width: 1000px;
-        margin: 20px
+        margin: 0 auto;
+        width: 95%;
     }
     
     #my-photo {
