@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the finest Syrian sweets at our store.">
-    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover the finest Syrian sweets at our store." />
+    <link rel="stylesheet" type="text/css" href="styles/default.css" />
     <title>Ahmad Al Homair's Angelic Alligator | WEB115 | Home</title>
-    <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
-    <script defer src="validation.js"></script>
     <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
 </head>
 
@@ -31,54 +29,63 @@
         <section id="featured-desserts">
             <h3>Featured Sweets</h3>
             <div class="dessert-gallery">
-                <img src="images/baklava.jpg" alt="Baklava">
-                <img src="images/knafeh.jpg" alt="Knafeh">
-                <img src="images/Moshakel.jpg" alt="Moshakel">
+                <img src="images/baklava.jpg" alt="Baklava" />
+                <img src="images/knafeh.jpg" alt="Knafeh" />
+                <img src="images/Moshakel.jpg" alt="Moshakel" />
             </div>
         </section>
     </main>
+
     <script>
         // script.js
 
         document.addEventListener("DOMContentLoaded", function() {
+            var htmlValidationLink = document.getElementById(
+                "validation-link-html"
+            );
+            htmlValidationLink.setAttribute(
+                "href",
+                "https://validator.w3.org/check?uri=" +
+                encodeURIComponent(location.href)
+            );
 
-            var htmlValidationLink = document.getElementById("validation_link_html");
-            htmlValidationLink.setAttribute("href", "https://validator.w3.org/check?uri=" + encodeURIComponent(location.href));
-
-            var cssValidationLink = document.getElementById("validation_link_css");
-            cssValidationLink.setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(location.href));
+            var cssValidationLink = document.getElementById("validation-link-css");
+            cssValidationLink.setAttribute(
+                "href",
+                "https://jigsaw.w3.org/css-validator/validator?uri=" +
+                encodeURIComponent(location.href)
+            );
         });
     </script>
 
-</body>
-<footer>
-    <nav>
-        <a href="https://github.com/Aboomar524">github</a>
-        <a href="https://aboomar524.github.io/">github.io</a>
-        <a href="https://aboomar524.github.io/web115/">WEB115.io </a>
-        <a href="https://www.freecodecamp.org/fccbd831ee0-dd03-4049-885f-d302c9301607">freecodecamp
-        </a>
+    <footer>
+        <nav>
+            <a href="https://github.com/Aboomar524">github</a>
+            <a href="https://aboomar524.github.io/">github.io</a>
+            <a href="https://aboomar524.github.io/web115/">WEB115.io </a>
+            <a href="https://www.freecodecamp.org/fccbd831ee0-dd03-4049-885f-d302c9301607">freecodecamp</a
+        >
         <a href="https://www.codecademy.com/learn">codecademy</a>
-        <a href="https://jsfiddle.net/user/fiddles/all/">jsfiddle</a>
-        <a href="https://www.linkedin.com/in/ahmad-al-homair/">LinkedIn</a>
-    </nav>
-    <p>
-        <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
-            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
-        </a>
+            <a href="https://jsfiddle.net/user/fiddles/all/">jsfiddle</a>
+            <a href="https://www.linkedin.com/in/ahmad-al-homair/">LinkedIn</a>
+        </nav>
+        <p>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
+                <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." />
+            </a>
 
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
-            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
-        </a>
-    </p>
-    <p>Designed by Ahmad Alhomair - All Rights Reserved &copy; 2024 </p>
-    <nav>
-        <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-    </nav>
-</footer>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+                <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." />
+            </a>
+        </p>
+        <p>Designed by Ahmad Alhomair - All Rights Reserved &copy; 2024</p>
+        <nav>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>
