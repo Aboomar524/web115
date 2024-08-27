@@ -30,7 +30,11 @@ body {
     align-items: center;
     height: 50 vh;
     text-align: center;
+    object-fit: cover;
+    object-position: center;
 }
+
+
 
 #my-photo figure {
     margin: 0;
