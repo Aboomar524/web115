@@ -24,7 +24,7 @@ body {
     /* Add space at the bottom to push the footer down */
 }
 
-#My-Photo {
+#my-photo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ body {
     text-align: center;
 }
 
-#My-Photo figure {
+#my-photo figure {
     margin: 0;
 }
 
