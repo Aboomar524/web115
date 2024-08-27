@@ -1,248 +1,232 @@
-@charset "utf-8";
-
-/* Color Scheme */
-
-:root {
-    --dark-blue: #0d1f2d;
-    --medium-gray: #546a7b;
-    --light-gray: #9ea3b0;
-    --pink: #fae1df;
-    --tan: #e4c3ad;
-}
-
-
-/* General Styles */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--medium-gray);
-    color: var(--pink);
-    padding-bottom: 60px;
-    /* Add space at the bottom to push the footer down */
-}
-
-#my-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50 vh;
-    text-align: center;
-    object-fit: cover;
-    object-position: center;
-}
-
-
-
-#my-photo figure {
-    margin: 0;
-}
-
-
-/* Header */
-
-header {
-    background-color: var(--dark-blue);
-    padding: 10px 0;
-    color: var(--pink);
-    text-align: center;
-}
-
-.cover-image {
-    object-fit: cover;
-    object-position: center;
-}
-
-
-/* Navigation */
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: var(--pink);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    opacity: 0.8;
-}
-
-
-/* Banner */
-
-.banner {
-    position: relative;
-    text-align: center;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--pink);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-
-/* CTA Button */
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--dark-blue);
-    color: var(--pink);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: var(--pink);
-    color: var(--dark-blue);
-}
-
-
-/* Special Offers */
-
-.special-offers {
-    padding: 20px;
-    text-align: center;
-}
-
-
-/* Products */
-
-.products {
-    padding: 20px;
-    text-align: center;
-}
-
-.products .product img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-}
-
-
-/* Footer */
-
-footer {
-    background-color: var(--dark-blue);
-    color: var(--pink);
-    text-align: center;
-    padding: 20px 0;
-    /* Padding for spacing inside the footer */
-    margin-top: 20px;
-    /* Adjust margin to move footer down */
-    position: relative;
-    /* Changed to relative to allow margin adjustment */
-    width: 100%;
-}
-
-footer nav {
-    margin-bottom: 15px;
-}
-
-footer nav a {
-    color: var(--pink);
-    /* Link color */
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-footer nav a:hover {
-    opacity: 0.8;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer p a {
-    color: var(--pink);
-    /* Link color inside footer paragraph */
-    text-decoration: none;
-}
-
-footer p a:hover {
-    opacity: 0.8;
-}
-
-footer img {
-    border: none;
-    /* Remove border from images */
-}
-
-
-/* Dessert Gallery */
-
-.dessert-gallery-section {
-    padding: 20px;
-    text-align: center;
-}
-
-.dessert-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.dessert-gallery img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.dessert-gallery img:hover {
-    transform: scale(1.1);
-}
-
-
-/* Image Gallery */
-
-.gallery {
-    padding: 20px;
-    text-align: center;
-}
-
-.gallery figure {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.1);
-}
+    @charset "utf-8";
+    /* Color Scheme */
+    
+     :root {
+        --dark-blue: #0d1f2d;
+        --medium-gray: #546a7b;
+        --light-gray: #9ea3b0;
+        --pink: #fae1df;
+        --tan: #e4c3ad;
+    }
+    /* General Styles */
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: var(--medium-gray);
+        color: var(--pink);
+        padding-bottom: 60px;
+        /* Add space at the bottom to push the footer down */
+    }
+    
+    header,
+    main,
+    footer {
+        margin: 20px;
+        /* You can adjust the value as needed */
+    }
+    
+    #my-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50 vh;
+        text-align: center;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #my-photo figure {
+        margin: 0;
+    }
+    /* Header */
+    
+    header {
+        background-color: var(--dark-blue);
+        padding: 10px 0;
+        color: var(--pink);
+        text-align: center;
+    }
+    
+    .cover-image {
+        object-fit: cover;
+        object-position: center;
+    }
+    /* Navigation */
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        color: var(--pink);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        opacity: 0.8;
+    }
+    /* Banner */
+    
+    .banner {
+        position: relative;
+        text-align: center;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--pink);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    /* CTA Button */
+    
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: var(--dark-blue);
+        color: var(--pink);
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    
+    .cta-button:hover {
+        background-color: var(--pink);
+        color: var(--dark-blue);
+    }
+    /* Special Offers */
+    
+    .special-offers {
+        padding: 20px;
+        text-align: center;
+    }
+    /* Products */
+    
+    .products {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .products .product img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+    /* Footer */
+    
+    footer {
+        background-color: var(--dark-blue);
+        color: var(--pink);
+        text-align: center;
+        padding: 20px 0;
+        /* Padding for spacing inside the footer */
+        margin-top: 20px;
+        /* Adjust margin to move footer down */
+        position: relative;
+        /* Changed to relative to allow margin adjustment */
+        width: 100%;
+    }
+    
+    footer nav {
+        margin-bottom: 15px;
+    }
+    
+    footer nav a {
+        color: var(--pink);
+        /* Link color */
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+    
+    footer nav a:hover {
+        opacity: 0.8;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    
+    footer p a {
+        color: var(--pink);
+        /* Link color inside footer paragraph */
+        text-decoration: none;
+    }
+    
+    footer p a:hover {
+        opacity: 0.8;
+    }
+    
+    footer img {
+        border: none;
+        /* Remove border from images */
+    }
+    /* Dessert Gallery */
+    
+    .dessert-gallery-section {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .dessert-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .dessert-gallery img {
+        width: 150px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+    
+    .dessert-gallery img:hover {
+        transform: scale(1.1);
+    }
+    /* Image Gallery */
+    
+    .gallery {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .gallery figure {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .gallery img {
+        width: 150px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery img:hover {
+        transform: scale(1.1);
+    }
