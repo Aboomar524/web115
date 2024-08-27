@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Your CSS rules follow here */
 
 /* Color Scheme */
 
@@ -36,7 +35,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50 vh;
+    height: 50vh;
     text-align: center;
     object-fit: cover;
     object-position: center;
@@ -246,4 +245,45 @@ footer img {
 
 .gallery img:hover {
     transform: scale(1.1);
+}
+
+/* Color Scheme Table */
+
+.color-scheme {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.color-scheme td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.bg-color-0d1f2d {
+    background-color: var(--dark-blue);
+}
+
+.bg-color-546a7b {
+    background-color: var(--medium-gray);
+}
+
+.bg-color-9ea3b0 {
+    background-color: var(--light-gray);
+}
+
+.bg-color-fae1df {
+    background-color: var(--pink);
+}
+
+.bg-color-e4c3ad {
+    background-color: var(--tan);
+}
+
+.color-code {
+    color: var(--pink);
+    /* Adjust for visibility */
 }
