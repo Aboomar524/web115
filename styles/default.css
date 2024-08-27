@@ -8,6 +8,7 @@
     --light-gray: #9ea3b0;
     --pink: #fae1df;
     --tan: #e4c3ad;
+    --yellow: #f7f600;
 }
 
 /* General Styles */
@@ -39,10 +40,13 @@ footer {
     text-align: center;
     object-fit: cover;
     object-position: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #my-photo figure {
-    margin: 0;
+    margin-top: 0;
+    padding-top: 0
 }
 
 /* Header */
@@ -56,6 +60,7 @@ header {
 
 h2 {
     text-align: center;
+    margin-bottom: 0;
 }
 
 .cover-image {
@@ -254,13 +259,28 @@ footer img {
     border-collapse: collapse;
 }
 
+
+/* Color Scheme Table */
+
+.color-scheme {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 .color-scheme td {
     width: 100px;
     height: 100px;
     text-align: center;
     vertical-align: middle;
-    color: var(--pink);
+    border: 1px solid #ddd;
+    /* Light border for better separation */
+    color: var(--dark-blue);
+    /* Use a contrasting color for text */
     font-weight: bold;
+    font-size: 14px;
+    /* Adjust font size for better readability */
+    box-sizing: border-box;
+    /* Include padding and border in width/height */
 }
 
 .bg-color-0d1f2d {
@@ -284,6 +304,10 @@ footer img {
 }
 
 .color-code {
-    color: var(--pink);
-    /* Adjust for visibility */
+    color: var(--yellow);
+    /* Contrast color for text to stand out */
+    font-size: 16px;
+    /* Larger font size for better readability */
+    font-weight: bold;
+    padding: 5px;
 }
