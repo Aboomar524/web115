@@ -36,19 +36,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 35vh;
     text-align: center;
     object-fit: cover;
     object-position: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
-#my-photo figure {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0
-}
 
 /* Header */
 
