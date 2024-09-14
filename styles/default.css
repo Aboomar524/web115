@@ -37,8 +37,6 @@ footer {
 }
 
 
-/* Photo with Caption */
-
 figure {
     display: flex;
     flex-direction: column;
@@ -51,6 +49,7 @@ figure {
 figure img {
     max-width: 15%;
     height: auto;
+    margin-top: 1rem;
 }
 
 figcaption {
@@ -156,7 +155,6 @@ footer img {
     width: 150px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
