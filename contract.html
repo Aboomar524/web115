@@ -6,41 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/default.css">
     <title>Ahmad Alhomair's Angelic Alligator | WEB115 | Course Contract</title>
-       <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+    <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div data-include="components/header.html" data-replace="%courseTitle%:, %pageTitle%: | Course Contract"></div>
-    <main>
-                   <h2>Course Contract
-            </h2>
-            <p>
-                I,
-                <span class="contract-text">
-                    <a href="introduction.html" style="color: red;">Ahmad Alhomair</a>
-</span>, agree to abide by the terms in my Fall 2024 WEB115 - 01 Web Markup and Scripting course with my instructor, D.I.von Briesen.
-            </p>
-            <p>
-                I understand that all work that I do on my school and personal websites will be publicly available to the world.I will not put information there that is inappropriate for schoolwork, or that I wish to keep private.
-            </p>
-            <p>
-                I also understand that it is my work that counts for attendance, not logins or showing up for class.As such, failure to turn in assignments may show as absences.
-            </p>
-            <p>Signed:
-                <em>Ahmad Al Homair, 012 /08 /2024
-</em>
-            </p>
-        </main>
+    <header data-include="components/header.html" data-replace="%courseTitle%:, %pageTitle%: | Course Contract"></header>
 
-        <div data-include="components/footer.html"></div>  
-        <script>
-            var htmlValidationLink = document.getElementById( "validation-link-html" ); 
-            htmlValidationLink.setAttribute( "href", "https://validator.w3.org/check?uri=" + encodeURIComponent(location.href) );
-            
-            var cssValidationLink = document.getElementById("validation-link-css"); 
-            cssValidationLink.setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(location.href));
-          </script>
-           <script src="scripts/validation.js"></script>
+    <main>
+        <h2>Course Contract</h2>
+
+        <p>I, <a href="introduction.html" class="contract-text">Ahmad Alhomair</a>, agree to abide by the terms in my Fall 2024 WEB115 - 01 Web Markup and Scripting course with my instructor, D.I.von Briesen.</p>
+
+        <p>I understand that all work that I do on my school and personal websites will be publicly available to the world. I will not put information there that is inappropriate for schoolwork, or that I wish to keep private.</p>
+
+        <p>I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences.</p>
+
+        <p>Signed: <em>Ahmad Alhomair, 12/08/2024</em></p>
+    </main>
+
+    <footer data-include="components/footer.html"></footer>
+
+    <script>
+        var htmlValidationLink = document.getElementById("validation-link-html");
+        htmlValidationLink.setAttribute("href", "https://validator.w3.org/check?uri=" + encodeURIComponent(location.href));
+
+        var cssValidationLink = document.getElementById("validation-link-css");
+        cssValidationLink.setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(location.href));
+    </script>
+
+    <script src="scripts/validation.js"></script>
 </body>
 
 </html>

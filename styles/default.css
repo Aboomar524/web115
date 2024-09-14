@@ -32,15 +32,30 @@ footer {
     width: 95%;
 }
 
-#my-photo {
+.contract-text {
+    color: red;
+}
+
+
+/* Photo with Caption */
+
+figure {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 35vh;
-    text-align: center;
-    object-fit: cover;
-    object-position: center;
-    margin-bottom: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    max-width: 15%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    color: var(--pink);
 }
 
 
@@ -55,14 +70,10 @@ header {
 
 h2 {
     text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0;
 }
 
-.cover-image {
-    object-fit: cover;
-    object-position: center;
-}
+
 
 /* Navigation */
 
@@ -87,64 +98,6 @@ nav ul li a:hover {
     opacity: 0.8;
 }
 
-/* Banner */
-
-.banner {
-    position: relative;
-    text-align: center;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--pink);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-/* CTA Button */
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--dark-blue);
-    color: var(--pink);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: var(--pink);
-    color: var(--dark-blue);
-}
-
-/* Special Offers */
-
-.special-offers {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Products */
-
-.products {
-    padding: 20px;
-    text-align: center;
-}
-
-.products .product img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-}
-
 /* Footer */
 
 footer {
@@ -152,11 +105,7 @@ footer {
     color: var(--pink);
     text-align: center;
     padding: 20px 0;
-    /* Padding for spacing inside the footer */
     margin-top: 20px;
-    /* Adjust margin to move footer down */
-    position: relative;
-    /* Changed to relative to allow margin adjustment */
     width: 100%;
 }
 
@@ -166,7 +115,6 @@ footer nav {
 
 footer nav a {
     color: var(--pink);
-    /* Link color */
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
@@ -182,7 +130,6 @@ footer p {
 
 footer p a {
     color: var(--pink);
-    /* Link color inside footer paragraph */
     text-decoration: none;
 }
 
@@ -192,48 +139,17 @@ footer p a:hover {
 
 footer img {
     border: none;
-    /* Remove border from images */
 }
 
 /* Dessert Gallery */
 
-.dessert-gallery-section {
-    padding: 20px;
-    text-align: center;
-}
-
-.dessert-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.dessert-gallery img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.dessert-gallery img:hover {
-    transform: scale(1.1);
-}
-
-/* Image Gallery */
-
 .gallery {
-    padding: 20px;
-    text-align: center;
-}
-
-.gallery figure {
-    margin: 0;
     display: flex;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
 }
 
 .gallery img {
@@ -248,13 +164,12 @@ footer img {
     transform: scale(1.1);
 }
 
-/* Color Scheme Table */
 
-.color-scheme {
-    width: 100%;
-    border-collapse: collapse;
+
+.gallery {
+    padding: 20px;
+    text-align: center;
 }
-
 
 /* Color Scheme Table */
 
