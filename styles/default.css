@@ -47,15 +47,18 @@ figure {
 }
 
 figure img {
-    max-width: 15%;
+    max-width: 20%;
     height: auto;
     margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figcaption {
-    margin-top: 5px;
     font-style: italic;
-    color: var(--pink);
+    padding: 2px;
+    text-align: center;
 }
 
 
@@ -206,7 +209,7 @@ footer img {
 }
 
 .color-code {
-    color: var(--yellow);
+    color: red;
     /* Contrast color for text to stand out */
     font-size: 16px;
     /* Larger font size for better readability */
