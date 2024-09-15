@@ -33,7 +33,7 @@ footer {
 }
 
 .contract-text {
-    color: red;
+    color: var(--yellow);
 }
 
 
