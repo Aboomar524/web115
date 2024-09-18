@@ -177,7 +177,7 @@ footer nav a:hover {
 }
 
 /* Main Content */
-main {
+#fizbuzz {
     max-width: 600px;
     margin: 2rem auto;
     padding: 2rem;
