@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /* Color Scheme */
-
 :root {
     --dark-blue: #0d1f2d;
     --medium-gray: #546a7b;
@@ -12,7 +11,6 @@
 }
 
 /* General Styles */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,7 +19,6 @@ body {
     background-color: var(--medium-gray);
     color: var(--pink);
     padding-bottom: 60px;
-    /* Add space at the bottom to push the footer down */
 }
 
 header,
@@ -31,11 +28,6 @@ footer {
     margin: 0 auto;
     width: 95%;
 }
-
-.contract-text {
-    color: var(--yellow);
-}
-
 
 figure {
     display: flex;
@@ -50,9 +42,6 @@ figure img {
     max-width: 20%;
     height: auto;
     margin-top: 1rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 figcaption {
@@ -61,9 +50,7 @@ figcaption {
     text-align: center;
 }
 
-
 /* Header */
-
 header {
     background-color: var(--dark-blue);
     padding: 10px 0;
@@ -76,10 +63,7 @@ h2 {
     margin: 0;
 }
 
-
-
 /* Navigation */
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -102,7 +86,6 @@ nav ul li a:hover {
 }
 
 /* Footer */
-
 footer {
     background-color: var(--dark-blue);
     color: var(--pink);
@@ -127,24 +110,7 @@ footer nav a:hover {
     opacity: 0.8;
 }
 
-footer p {
-    margin: 0;
-}
-
-footer p a {
-    color: var(--pink);
-    text-decoration: none;
-}
-
-footer p a:hover {
-    opacity: 0.8;
-}
-
-footer img {
-    border: none;
-}
-
-
+/* Gallery */
 .gallery {
     display: flex;
     justify-content: center;
@@ -166,7 +132,6 @@ footer img {
 }
 
 /* Color Scheme Table */
-
 .color-scheme {
     width: 100%;
     border-collapse: collapse;
@@ -178,14 +143,10 @@ footer img {
     text-align: center;
     vertical-align: middle;
     border: 1px solid #ddd;
-    /* Light border for better separation */
     color: var(--dark-blue);
-    /* Use a contrasting color for text */
     font-weight: bold;
     font-size: 14px;
-    /* Adjust font size for better readability */
     box-sizing: border-box;
-    /* Include padding and border in width/height */
 }
 
 .bg-color-0d1f2d {
@@ -210,9 +171,86 @@ footer img {
 
 .color-code {
     color: red;
-    /* Contrast color for text to stand out */
     font-size: 16px;
-    /* Larger font size for better readability */
     font-weight: bold;
     padding: 5px;
+}
+
+/* Main Content */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--dark-blue);
+}
+
+#name-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#name-form label {
+    font-size: 1rem;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+#name-form input[type="text"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--medium-gray);
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#name-form input[type="text"]:focus {
+    border-color: var(--yellow);
+    box-shadow: 0 0 5px rgba(247, 246, 0, 0.5);
+    /* Soft focus effect */
+    outline: 2px solid var(--yellow);
+    /* Keep the outline but with a customized color */
+}
+
+#submit {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: var(--dark-blue);
+    color: var(--pink);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0a1723;
+}
+
+#submit:focus {
+    outline: 2px solid var(--yellow);
+    /* Keeping the focus outline with a custom color */
+    box-shadow: 0 0 5px rgba(13, 31, 45, 0.5);
+}
+
+#loop-list {
+    margin-top: 2rem;
+    padding-left: 1.25rem;
+    list-style-type: decimal;
+    color: var(--dark-blue);
+}
+
+#loop-list li {
+    margin-bottom: 0.5rem;
+}
+
+greeting {
+    text-align: center;
+    font-size: 1.75rem;
+    color: var(--pink);
+    margin-bottom: 2rem;
 }
