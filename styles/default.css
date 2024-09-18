@@ -217,24 +217,18 @@ footer nav a:hover {
 }
 
 #submit {
-    padding: 0.75rem;
+    padding: 0.50rem;
     font-size: 1rem;
-    background-color: var(--dark-blue);
-    color: var(--pink);
+    background-color: var(--medium-gray);
+    color: var(--yellow);
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #submit:hover {
     background-color: #0a1723;
-}
-
-#submit:focus {
-    outline: 2px solid var(--yellow);
-    /* Keeping the focus outline with a custom color */
-    box-shadow: 0 0 5px rgba(13, 31, 45, 0.5);
 }
 
 #loop-list {
@@ -248,9 +242,9 @@ footer nav a:hover {
     margin-bottom: 0.5rem;
 }
 
-greeting {
+#greeting {
     text-align: center;
     font-size: 1.75rem;
-    color: var(--pink);
+    color: rgb(140, 255, 0);
     margin-bottom: 2rem;
 }
