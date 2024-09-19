@@ -176,75 +176,92 @@ footer nav a:hover {
     padding: 5px;
 }
 
-/* Main Content */
-#fizbuzz {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
+/* Style for the main form container */
+#fizzbuzz0 {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
     background-color: var(--light-gray);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    color: var(--dark-blue);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Style for the form */
 #name-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 15px;
 }
 
-#name-form label {
-    font-size: 1rem;
-    color: var(--dark-blue);
+/* General label styles */
+label {
     font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--dark-blue);
 }
 
-#name-form input[type="text"] {
-    padding: 0.75rem;
-    font-size: 1rem;
+/* General input styles */
+input[type="text"] {
     border: 1px solid var(--medium-gray);
     border-radius: 5px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-#name-form input[type="text"]:focus {
-    border-color: var(--yellow);
-    box-shadow: 0 0 5px rgba(247, 246, 0, 0.5);
-    /* Soft focus effect */
-    outline: 2px solid var(--yellow);
-    /* Keep the outline but with a customized color */
-}
-
-#submit {
-    padding: 0.50rem;
     font-size: 1rem;
-    background-color: var(--medium-gray);
-    color: var(--yellow);
+    width: 100%;
+}
+
+/* Button styles */
+.form-button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--yellow);
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-#submit:hover {
-    background-color: #0a1723;
+/* Style for the reset button */
+#clear {
+    background-color: var(--tan);
+}
+
+/* Hover effect for buttons */
+.form-button:hover {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+/* Style for the ordered list */
+#loop-list {
+    margin-top: 20px;
+    padding-left: 20px;
+    color: var(--medium-gray);
+}
+
+.output-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.output-list li {
+    list-style-type: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+
 }
 
 #loop-list {
-    margin-top: 2rem;
-    padding-left: 1.25rem;
-    list-style-type: decimal;
-    color: var(--dark-blue);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
 
-#loop-list li {
-    margin-bottom: 0.5rem;
-}
-
-#greeting {
+.output-item {
+    padding: 10px;
+    border: 1px solid #ccc;
     text-align: center;
-    font-size: 1.75rem;
-    color: rgb(140, 255, 0);
-    margin-bottom: 2rem;
+    background-color: #3a3c71;
+    color: aqua;
 }
