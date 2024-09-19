@@ -180,11 +180,13 @@ footer nav a:hover {
 #fizzbuzz0 {
     font-family: Arial, sans-serif;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 1 auto;
     padding: 20px;
     background-color: var(--light-gray);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
 }
 
 /* Style for the form */
@@ -256,6 +258,7 @@ input[type="text"] {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+    justify-items: center;
 }
 
 .output-item {
@@ -264,4 +267,5 @@ input[type="text"] {
     text-align: center;
     background-color: #3a3c71;
     color: aqua;
+
 }
