@@ -26,7 +26,7 @@ form.addEventListener("submit", function (event) {
 
     // Generate FizzBuzz output
     for (let i = 1; i <= count; i++) {
-        let output = "Bazoom Bazang - ";
+        let output = "Sweet Syria - ";
         if (i % 2 === 0) {
             output += "the number is even";
         } else {
