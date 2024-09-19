@@ -15,21 +15,24 @@ form.addEventListener("submit", function (event) {
         return;
     }
 
-    // Reset heading and clear list
+    // Set greeting message
     greeting.textContent = `Welcome to Sweet Syria, ${firstName} ${middleInitial} ${lastName}!`.replace(/\s+/g, " ").trim();
-    loopList.innerHTML = "";
-
-    // Prompt user for count and ensure it's a valid positive number
-    const count = parseInt(prompt(`How high do you want to count, ${firstName}?`), 10);
-    if (isNaN(count) || count <= 0) {
-        alert("Please enter a valid positive number.");
-        return;
-    }
+    loopList.innerHTML = ""; // Clear previous output
 
     // Loop to append list items
-    for (let x = 1; x <= count; x++) {
-        const listItem = document.createElement("li");
-        listItem.textContent = `Sweet Syria - ${x % 2 === 0 ? "The number is even" : "The number is odd"}`;
-        loopList.appendChild(listItem);
+    for (let i = 1; i <= 140; i++) {
+        let output = "Yummy!"; // Default output
+        if (i % 3 === 0 && i % 5 === 0) {
+            output = "Yummy Tasty!";
+        } else if (i % 3 === 0) {
+            output = "Yummy!";
+        } else if (i % 5 === 0) {
+            output = "Tasty!";
+        }
+
+        const outputItem = document.createElement("div");
+        outputItem.className = "output-item"; // Add class for styling
+        outputItem.textContent = `${i}. ${output}`;
+        loopList.appendChild(outputItem);
     }
 });
