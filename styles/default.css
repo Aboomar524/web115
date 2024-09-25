@@ -83,6 +83,7 @@ nav ul li a {
 
 nav ul li a:hover {
     opacity: 0.8;
+    color: #f7f600;
 }
 
 /* Footer */
@@ -249,7 +250,7 @@ input[type="text"] {
 .output-list li {
     list-style-type: none;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #e3f30a;
     text-align: center;
 
 }
@@ -259,13 +260,14 @@ input[type="text"] {
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     justify-items: center;
+    color: #bdf30a;
 }
 
 .output-item {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     text-align: center;
-    background-color: #3a3c71;
-    color: aqua;
+    background-color: #3a5871;
+
 
 }

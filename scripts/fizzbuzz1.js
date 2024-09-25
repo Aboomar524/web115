@@ -14,7 +14,6 @@ form.addEventListener("submit", function (event) {
         alert("Please enter your first and last name.");
         return;
     }
-
     // Set greeting message
     greeting.textContent = `Welcome to Sweet Syria, ${firstName} ${middleInitial}. ${lastName}!`.replace(/\s+/g, " ").trim();
     loopList.innerHTML = ""; // Clear previous output
