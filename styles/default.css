@@ -39,7 +39,7 @@ figure {
 }
 
 figure img {
-    max-width: 20%;
+    max-width: 75%;
     height: auto;
     margin-top: 1rem;
 }
@@ -48,6 +48,7 @@ figcaption {
     font-style: italic;
     padding: 2px;
     text-align: center;
+    font-size: 0.8rem;
 }
 
 /* Header */
@@ -120,9 +121,10 @@ footer nav a:hover {
     display: flex;
     justify-content: center;
     gap: 10px;
-    flex-wrap: wrap;
     padding: 20px;
     text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .gallery img {
@@ -135,6 +137,7 @@ footer nav a:hover {
 .gallery img:hover {
     transform: scale(1.1);
 }
+
 
 /* Color Scheme Table */
 .color-scheme {
