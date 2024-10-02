@@ -31,7 +31,7 @@ form.addEventListener("submit", function (event) {
     // Get the count from the user
     let count;
     do {
-        count = prompt(`How high do you want to count, ${firstName}?`);
+        count = prompt(`How high do you like to count, ${firstName}?`);
         console.log("Prompt value:", count);  // Debug log to check the prompt value
         if (isNaN(count) || count === null || count.trim() === "") {
             alert("Please enter a valid number.");
