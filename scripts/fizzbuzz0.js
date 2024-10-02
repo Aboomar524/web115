@@ -6,6 +6,7 @@ form.addEventListener("submit", function (event) {
     const firstName = document.getElementById("first-name").value;
     const middleInitial = document.getElementById("middle-initial").value;
     const lastName = document.getElementById("last-name").value;
+    const greeting = document.getElementById("greeting"); // Ensure you have an element with this ID
     const loopList = document.getElementById("loop-list");
 
     // Validate that the user has entered a name
@@ -13,6 +14,9 @@ form.addEventListener("submit", function (event) {
         alert("Please enter your first and last name.");
         return;
     }
+
+    // Change the greeting dynamically
+    greeting.textContent = `Welcome to Sweet Syria, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}!`;
 
     // Prompt user for count
     const count = parseInt(prompt(`How high do you want to count, ${firstName}?`), 10);
@@ -26,11 +30,11 @@ form.addEventListener("submit", function (event) {
 
     // Generate FizzBuzz output
     for (let i = 1; i <= count; i++) {
-        let output = "Sweet Syria - ";
+        let output = `Sweet Syria - Number ${i} is `;
         if (i % 2 === 0) {
-            output += "the number is even";
+            output += "even";
         } else {
-            output += "the number is odd";
+            output += "odd";
         }
 
         const listItem = document.createElement("li");

@@ -14,23 +14,14 @@ form.addEventListener("submit", function (event) {
         alert("Please enter your first and last name.");
         return;
     }
+
     // Set greeting message
-    greeting.textContent = `Welcome to Sweet Syria, ${firstName} ${middleInitial}. ${lastName}!`.replace(/\s+/g, " ").trim();
+    greeting.textContent = `Welcome to Sweet Syria, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}!`.replace(/\s+/g, " ").trim();
     loopList.innerHTML = ""; // Clear previous output
 
-    // Generate FizzBuzz output
-    for (let i = 1; i <= 140; i++) {
-        let output = "";
-
-        if (i % 3 === 0 && i % 5 === 0) {
-            output = "Yummy Tasty!";
-        } else if (i % 3 === 0) {
-            output = "Yummy!";
-        } else if (i % 5 === 0) {
-            output = "Tasty!";
-        } else {
-            output = "Regular"; // Optional for clarity
-        }
+    // Generate FizzBuzz output with only two words
+    for (let i = 1; i <= 125; i++) {
+        let output = "Delicious Yummy"; // Only using two words
 
         const outputItem = document.createElement("div");
         outputItem.textContent = `${i}. ${output}`;
