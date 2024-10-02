@@ -138,6 +138,18 @@ footer nav a:hover {
     transform: scale(1.1);
 }
 
+.contract-text {
+    color: #db6034;
+
+    text-decoration: none;
+
+}
+
+.contract-text:hover {
+    color: #b9b429;
+    text-decoration: underline;
+
+}
 
 /* Color Scheme Table */
 .color-scheme {
