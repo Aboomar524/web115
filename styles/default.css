@@ -39,8 +39,8 @@ figure {
 }
 
 figure img {
-    max-width: 75%;
-    height: auto;
+    max-width: 20%;
+    height: 10%;
     margin-top: 1rem;
 }
 
@@ -50,6 +50,7 @@ figcaption {
     text-align: center;
     font-size: 0.8rem;
 }
+
 
 /* Header */
 header {
@@ -144,6 +145,7 @@ footer nav a:hover {
     text-decoration: none;
 
 }
+
 
 .contract-text:hover {
     color: #b9b429;
