@@ -1,12 +1,13 @@
 const form = document.getElementById("name-form");
 
 form.addEventListener("submit", function (event) {
+    // Prevent the default form submission behavior
     event.preventDefault();
 
     const firstName = document.getElementById("first-name").value;
     const middleInitial = document.getElementById("middle-initial").value;
     const lastName = document.getElementById("last-name").value;
-    const greeting = document.getElementById("greeting"); // Ensure you have an element with this ID
+    const greeting = document.getElementById("greeting");
     const loopList = document.getElementById("loop-list");
 
     // Validate that the user has entered a name
@@ -15,8 +16,12 @@ form.addEventListener("submit", function (event) {
         return;
     }
 
-    // Change the greeting dynamically
-    greeting.textContent = `Welcome to Sweet Syria, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}!`;
+    // Reset the greeting and clear the list
+    greeting.textContent = "Welcome to Sweet Syria.";
+    loopList.innerHTML = "";
+
+    // Update the greeting with the user's name
+    greeting.textContent = `${greeting.textContent} ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}!`.replace(/\s+/g, " ").trim();
 
     // Prompt user for count
     const count = parseInt(prompt(`How high do you want to count, ${firstName}?`), 10);
@@ -25,20 +30,13 @@ form.addEventListener("submit", function (event) {
         return;
     }
 
-    // Clear previous output
-    loopList.innerHTML = "";
-
-    // Generate FizzBuzz output
-    for (let i = 1; i <= count; i++) {
-        let output = `Sweet Syria - Number ${i} is `;
-        if (i % 2 === 0) {
-            output += "even";
-        } else {
-            output += "odd";
-        }
-
+    // Generate the counting output
+    for (let x = 1; x <= count; x++) {
+        // Create a new list item
         const listItem = document.createElement("li");
-        listItem.textContent = output;
+        listItem.textContent = `Sweet Syria - ${x % 2 === 0 ? "the number is even" : "the number is odd"}`;
+
+        // Append the list item to the loop list
         loopList.appendChild(listItem);
     }
 });
