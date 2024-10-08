@@ -57,7 +57,7 @@ figcaption {
 /* Header */
 header {
     background-color: var(--dark-blue);
-    padding: 10px 0;
+    padding: 15px;
     color: var(--pink);
     text-align: center;
 }
@@ -65,6 +65,7 @@ header {
 h2 {
     text-align: center;
     margin: 0;
+    padding: 35px;
 }
 
 h3 {
@@ -99,12 +100,15 @@ footer {
     background-color: var(--dark-blue);
     color: var(--pink);
     text-align: center;
-    padding: 20px 0;
+    padding: 25px 0;
     margin-top: 20px;
     width: 100%;
 }
 
 footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 15px;
 }
 
@@ -113,10 +117,18 @@ footer nav a {
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
+    transition: opacity 0.3s ease;
+    text-align: center;
 }
 
 footer nav a:hover {
     opacity: 0.8;
+}
+
+footer p {
+
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 /* Gallery */
