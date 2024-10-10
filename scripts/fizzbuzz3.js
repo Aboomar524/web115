@@ -56,13 +56,13 @@ form.addEventListener("submit", function (event) {
         for (const obj of fizzBuzzBang) {
             for (const [divisor, word] of Object.entries(obj)) {
                 if (checkDivision(x, Number(divisor))) {
-                    result += word; // Concatenate the word if the number is divisible by the divisor
+                    result += word + " "; // Concatenate the word if the number is divisible by the divisor
                 }
             }
         }
 
-        // If no divisibility was found, display the number itself
-        listItem.textContent = result ? result : x;
+        // Include the number in the output, even if it's a multiple of 3, 5, or 7
+        listItem.textContent = result ? `${x}: ${result.trim()}` : x;
 
         // Add the list item to the loop list
         loopList.appendChild(listItem);
