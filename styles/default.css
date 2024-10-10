@@ -126,7 +126,7 @@ footer nav a:hover {
 }
 
 footer p {
-
+    margin-top: 10px;
     font-size: 0.9rem;
     text-align: center;
 }
@@ -268,53 +268,17 @@ input[type="text"] {
     color: white;
 }
 
-/* Style for the ordered list */
-#loop-list {
-    #loop-list {
-        max-width: 100%;
-        overflow: auto;
-        padding: 10px;
-        border: 1px solid #ccc;
-        margin-top: 10px;
-    }
-
-    li {
-        white-space: nowrap;
-        /* Prevent line breaks within the list items */
-    }
-
-}
-
-.output-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-}
-
-.output-list li {
-    list-style-type: none;
-    padding: 5px;
-    border: 1px solid #e3f30a;
-    text-align: center;
-
-}
 
 #loop-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    justify-items: center;
-    color: #bdf30a;
+    align-self: center;
+    text-align: left;
+    color: #141314;
 }
 
-.output-item {
-    padding: 10px;
-    border: 1px solid #cccccc;
-    text-align: center;
-    background-color: #3a5871;
-
-
+#loop-list li {
+    margin-bottom: 8px;
 }
+
 
 .navbar {
     list-style-type: none;
