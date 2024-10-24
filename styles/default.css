@@ -27,6 +27,7 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
     width: 95%;
+    padding: 15px 0;
 }
 
 header p em {
@@ -34,6 +35,11 @@ header p em {
     color: var(--yellow);
     font-size: larger
 }
+
+main {
+    margin: 50px auto;
+}
+
 
 
 figure {
@@ -73,6 +79,8 @@ h2 {
     text-align: center;
     margin: 0;
     padding: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -160,7 +168,7 @@ footer p {
 }
 
 .contract-text {
-    color: #db6034;
+    color: yellow;
 
     text-decoration: none;
 
@@ -168,7 +176,7 @@ footer p {
 
 
 .contract-text:hover {
-    color: #b9b429;
+    color: #80bfff;
     text-decoration: underline;
 
 }
