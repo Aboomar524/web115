@@ -36,6 +36,10 @@ header p em {
     font-size: larger
 }
 
+header img {
+    float: left;
+}
+
 main {
     margin: 50px auto;
 }
