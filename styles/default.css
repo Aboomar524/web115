@@ -29,6 +29,13 @@ footer {
     width: 95%;
 }
 
+header p em {
+    font-style: italic;
+    color: var(--yellow);
+    font-size: larger
+}
+
+
 figure {
     display: flex;
     flex-direction: column;
