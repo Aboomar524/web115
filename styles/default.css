@@ -158,6 +158,14 @@ footer p {
     text-align: center;
 }
 
+footer p em {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #e4c3ad;
+    text-align: center;
+    display: block;
+}
+
 /* Gallery */
 .gallery {
     display: flex;
