@@ -246,44 +246,44 @@ footer p {
 #name-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    width: 300px;
+    /* adjust the width as needed */
+    margin: auto;
 }
 
-/* General label styles */
+#name-form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
 label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
 }
 
-/* General input styles */
 input[type="text"] {
-    border: 1px solid var(--medium-gray);
-    border-radius: 5px;
+    padding: 0.5rem;
     font-size: 1rem;
-    width: 100%;
+    background-color: #d0dcdd;
 }
 
-/* Button styles */
+input::placeholder {
+    color: #ec5317;
+
+}
+
 .form-button {
-    padding: 10px;
+    padding: 0.5rem;
     font-size: 1rem;
-    background-color: var(--yellow);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+    background-color: #e4c3ad;
 }
 
-/* Style for the reset button */
-#clear {
-    background-color: var(--tan);
-}
 
 /* Hover effect for buttons */
 .form-button:hover {
     background-color: var(--dark-blue);
-    color: white;
+    color: rgb(235, 232, 24);
 }
 
 
