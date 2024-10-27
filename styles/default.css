@@ -39,10 +39,11 @@ header img {
     float: left;
     max-width: 15%;
     height: 10%;
-    margin-top: 1rem;
     border: none;
     background-color: transparent;
-    border-radius: 50%;
+    border-radius: 20%;
+    flex-direction: row;
+    align-self: center;
 }
 
 main {
@@ -63,10 +64,9 @@ figure {
 figure img {
     max-width: 15%;
     height: 10%;
-    margin-top: 1rem;
     border: none;
-    background-color: var(--medium-gray);
-    border-radius: 50%;
+    border-radius: 25%;
+    margin-bottom: 1em;
 }
 
 figcaption {
@@ -74,6 +74,7 @@ figcaption {
     padding: 2px;
     text-align: center;
     font-size: 25px;
+    color: #f7f600;
 }
 
 
@@ -97,6 +98,9 @@ h2 {
 
 h3 {
     text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #eeaa0c;
 }
 
 /* Navigation */
@@ -104,11 +108,13 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -274,7 +280,9 @@ footer p em {
 }
 
 label {
-    margin-bottom: 0.5rem;
+    display: block;
+    margin: 0.5rem 0;
+
 }
 
 input[type="text"] {
