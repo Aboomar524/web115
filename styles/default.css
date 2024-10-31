@@ -37,13 +37,14 @@ header p em {
 
 header img {
     float: left;
-    max-width: 15%;
+    max-width: 10%;
     height: 10%;
     border: none;
     background-color: transparent;
-    border-radius: 20%;
+    border-radius: 15%;
     flex-direction: row;
     align-self: center;
+    margin-bottom: 15px;
 }
 
 main {
@@ -66,7 +67,7 @@ figure img {
     height: 10%;
     border: none;
     border-radius: 25%;
-    margin-bottom: 1em;
+    margin-bottom: 2rem;
 }
 
 figcaption {
