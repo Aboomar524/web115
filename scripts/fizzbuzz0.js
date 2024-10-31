@@ -18,7 +18,7 @@ form.addEventListener("submit", function (event) {
 
     // Reset the greeting and clear the list
     greeting.textContent = "Welcome to Sweet Syria.";
-    loopList.innerHTML = "";
+    loopList.innerHTML = "";  // Clears previous list items
 
     // Update the greeting with the user's name
     greeting.textContent = `${greeting.textContent} ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}!`.replace(/\s+/g, " ").trim();
