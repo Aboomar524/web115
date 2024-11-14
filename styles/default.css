@@ -252,64 +252,76 @@ footer p em {
     padding: 5px;
 }
 
-/* Style for the main form container */
-#fizzbuzz0 {
-    font-family: Arial, sans-serif;
-    max-width: 500px;
-    margin: 1 auto;
-    padding: 20px;
-    background-color: var(--light-gray);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 
-}
 
 /* Style for the form */
 #name-form {
     display: flex;
     flex-direction: column;
     width: 300px;
-    /* adjust the width as needed */
     margin: auto;
+}
+
+.name-row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.name-row label {
+    margin: 0;
 }
 
 #name-form div {
     display: flex;
-    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
-label {
-    display: block;
-    margin: 0.5rem 0;
-
-}
-
-input[type="text"] {
-    padding: 0.5rem;
+input[type="text"],
+.form-button {
+    padding: 0.3rem;
     font-size: 1rem;
     background-color: #d0dcdd;
 }
 
-input::placeholder {
-    color: #ec5317;
+input[type="number"] {
+    width: 25px;
+}
 
+.button-row {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    /* لمحاذاة الأزرار بجانب بعضها */
+}
+
+#greeting {
+    color: #bfe917;
+    /* لون فاتح ليكون مرئياً على الخلفية الداكنة */
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+
+#loop-list li {
+    color: #f7f600;
+    /* Brighter yellow for readability */
+    font-size: 1.1rem;
 }
 
 .form-button {
-    padding: 0.5rem;
-    font-size: 1rem;
-    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
     background-color: #e4c3ad;
 }
 
-
-/* Hover effect for buttons */
 .form-button:hover {
     background-color: var(--dark-blue);
     color: rgb(235, 232, 24);
 }
+
 
 
 #loop-list {

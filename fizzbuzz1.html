@@ -16,29 +16,24 @@
     <main>
         <h2>FizzBuzz1</h2>
     <h3 id="greeting">Welcome to Sweet Syria.</h3>
-        <form id="name-form">
-            <div>
-                <label for="first-name">First Name</label>
-                <input id="first-name" type="text" size="5" placeholder="Enter your first name">
-            </div>
-            <div>
-                <label for="middle-initial">Middle Initial</label>
-                <input id="middle-initial" type="text" size="1" maxlength="1" placeholder="Enter your middle-initial">
-            </div>
-            <div>
-                <label for="last-name">Last Name</label>
-                <input id="last-name" type="text" size="5" placeholder="Enter your last name">
-            </div>
+    <form id="name-form">
+        <div class="name-row">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" placeholder="First" >
             
-            <div>
-                <label for="submit"></label>
-                <input class="form-button" id="submit" type="submit" value="Submit">
-            </div>
-            <div>
-                <label for="clear"></label>
-                <input class="form-button" id="clear" type="reset" value="Clear">
-            </div>
-        </form>
+            <label for="middle-initial">MI:</label>
+            <input type="text" id="middle-initial" placeholder="M" maxlength="1" >
+    
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="Last">
+        </div>
+    
+        <div class="button-row">
+            <button type="submit" class="form-button">Submit</button>
+            <input type="reset" id="clear" class="form-button" value="Clear">
+        </div>
+        
+    </form>
         <div id="loop-list" class="output-list"></div>
     </main>
  
