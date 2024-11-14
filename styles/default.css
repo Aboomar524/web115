@@ -260,6 +260,7 @@ footer p em {
     flex-direction: column;
     width: 300px;
     margin: auto;
+    align-items: left;
 }
 
 .name-row {
@@ -267,6 +268,7 @@ footer p em {
     gap: 0.5rem;
     align-items: center;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 .name-row label {
