@@ -6,67 +6,61 @@
     <meta name="description" content="Discover the finest Syrian sweets at our store.">
     <link rel="stylesheet" type="text/css" href="styles/default.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
-    <title>Ahmad Alhomair's Sweet Syria | Fizz Buzz 0</title>
+    <title>Ahmad Alhomair's Sweet Syria | FizzBuzz 0</title>
     <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div data-include="components/header.html"></div>
-    <h2>FizzBuzz4</h2>
-    <h3 id="greeting">Welcome to Sweet Syria.</h3>
+    <h2>FizzBuzzBang Everything</h2>
+    <h3 id="greeting">Welcome to Sweet Syria</h3>
 
     <main id="fizzbuzz0">
         <form id="name-form">
-            <div>
-                <label for="first-name">First Name</label>
-                <input id="first-name" type="text" size="5" placeholder="Enter your first name">
-            </div>
-            <div>
-                <label for="middle-initial">Middle Initial</label>
-                <input id="middle-initial" type="text" size="1" maxlength="1" placeholder="Enter your middle-initial">
-            </div>
-            <div>
-                <label for="last-name">Last Name</label>
-                <input id="last-name" type="text" size="5" placeholder="Enter your last name">
-            </div>
-            
-            <div>
-                <label for="divisor1">Divisor 1</label>
-                <input id="divisor1" type="number" value="3" required>
-                <label for="word1">Word 1</label>
-                <input id="word1" type="text" value="Fizz" required>
-            </div>
-            <div>
-                <label for="divisor2">Divisor 2</label>
-                <input id="divisor2" type="number" value="5" required>
-                <label for="word2">Word 2</label>
-                <input id="word2" type="text" value="Buzz" required>
-            </div>
-            <div>
-                <label for="divisor3">Divisor 3</label>
-                <input id="divisor3" type="number" value="7" required>
-                <label for="word3">Word 3</label>
-                <input id="word3" type="text" value="Bang" required>
-            </div>
-            <div>
-                <label for="total">Total Range</label>
-                <input id="total" type="number" value="125" required>
+            <div class="form-row">
+                <label for="first-name">First Name:</label>
+                <input id="first-name" type="text" size="10" placeholder="First Name">
+                <label for="middle-initial">Middle Initial:</label>
+                <input id="middle-initial" type="text" size="1" maxlength="1" placeholder="M">
+                <label for="last-name">Last Name:</label>
+                <input id="last-name" type="text" size="10" placeholder="Last Name">
             </div>
 
-            <div>
-                <label for="submit"></label>
-                <input class="form-button" id="submit" type="submit" value="Submit">
+            <div class="form-row">
+                <label for="divisor1">Divisor 1:</label>
+                <input id="divisor1" type="number" class="small-input" value="3" required>
+                <label for="word1">Word 1:</label>
+                <input id="word1" type="text" value="Fizz" required>
             </div>
-            <div>
-                <label for="clear"></label>
+            
+            <div class="form-row">
+                <label for="divisor2">Divisor 2:</label>
+                <input id="divisor2" type="number" class="small-input" value="5" required>
+                <label for="word2">Word 2:</label>
+                <input id="word2" type="text" value="Buzz" required>
+            </div>
+
+            <div class="form-row">
+                <label for="divisor3">Divisor 3:</label>
+                <input id="divisor3" type="number" class="small-input" value="7" required>
+                <label for="word3">Word 3:</label>
+                <input id="word3" type="text" value="Bang" required>
+            </div>
+
+            <div class="form-row">
+                <label for="total">Total Range:</label>
+                <input id="total" type="number" class="small-input" value="125" required>
+            </div>
+
+            <div class="form-actions">
+                <input class="form-button" id="submit" type="submit" value="Submit">
                 <input class="form-button" id="clear" type="reset" value="Clear">
             </div>
         </form>
         <div id="loop-list" class="output-list"></div>
     </main>
-    <br>
-  
+
     <div data-include="components/footer.html"></div>
-  
+
     <script src="scripts/HTMLInclude.js"></script>
     <script src="scripts/fizzbuzz4.js"></script>
 </body>
