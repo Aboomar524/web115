@@ -7,11 +7,9 @@ document.getElementById('name-form').addEventListener('submit', function (event)
     var greeting = document.getElementById('greeting');
 
     // Set greeting based on name input
-    if (firstName || lastName || middleInitial) {
-        greeting.textContent = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}! Welcome to Sweet Syria.`;
-    } else {
-        greeting.textContent = "Welcome to Sweet Syria.";
-    }
+    greeting.textContent = firstName || middleInitial || lastName
+        ? `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}! Welcome to Sweet Syria.`
+        : "Welcome to Sweet Syria.";
 
     var divisor1 = parseInt(document.getElementById('divisor1').value);
     var word1 = document.getElementById('word1').value.trim();
