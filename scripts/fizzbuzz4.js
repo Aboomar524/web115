@@ -1,6 +1,18 @@
 document.getElementById('name-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
+    var firstName = document.getElementById('first-name').value.trim();
+    var middleInitial = document.getElementById('middle-initial').value.trim();
+    var lastName = document.getElementById('last-name').value.trim();
+    var greeting = document.getElementById('greeting');
+
+    // Set greeting based on name input
+    if (firstName || lastName || middleInitial) {
+        greeting.textContent = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}! Welcome to Sweet Syria.`;
+    } else {
+        greeting.textContent = "Welcome to Sweet Syria.";
+    }
+
     var divisor1 = parseInt(document.getElementById('divisor1').value);
     var word1 = document.getElementById('word1').value.trim();
     var divisor2 = parseInt(document.getElementById('divisor2').value);
