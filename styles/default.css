@@ -79,8 +79,8 @@ figcaption {
 
 /* Header */
 header {
-    background-color: var(--dark-blue);
-    padding: 100px;
+    background-color: transparent;
+    padding: 125px;
     text-align: center;
 }
 
@@ -126,7 +126,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: var(--dark-blue);
+    background-color: transparent;
     color: var(--pink);
     text-align: center;
     margin-top: 10px;
@@ -323,7 +323,7 @@ input[type="number"] {
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
-    margin-right: 10px;
+
 }
 
 .form-button:hover {
