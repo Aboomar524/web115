@@ -32,7 +32,7 @@ footer {
 header p em {
     font-style: italic;
     color: var(--yellow);
-    font-size: larger
+    font-size: larger;
 }
 
 header img {
@@ -51,8 +51,6 @@ main {
     margin: 0px auto;
 }
 
-
-
 figure {
     display: flex;
     flex-direction: column;
@@ -60,7 +58,6 @@ figure {
     margin: 0;
     padding: 0;
     margin-top: 1rem;
-
 }
 
 figure img {
@@ -80,14 +77,10 @@ figcaption {
     color: #f7f600;
 }
 
-
-
-
 /* Header */
 header {
     background-color: var(--dark-blue);
     padding: 15px;
-    color: var(--pink);
     text-align: center;
 }
 
@@ -112,7 +105,6 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-
 }
 
 nav ul li {
@@ -121,9 +113,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--pink);
+
     text-decoration: none;
     font-weight: bold;
+
 }
 
 nav ul li a:hover {
@@ -197,16 +190,12 @@ footer p em {
 
 .contract-text {
     color: yellow;
-
     text-decoration: none;
-
 }
-
 
 .contract-text:hover {
     color: #80bfff;
     text-decoration: underline;
-
 }
 
 /* Color Scheme Table */
@@ -254,15 +243,13 @@ footer p em {
     padding: 5px;
 }
 
-
-
 /* Style for the form */
 #name-form {
     display: flex;
     flex-direction: column;
     width: 300px;
     margin: auto;
-    align-items: left;
+    align-items: center;
 }
 
 .name-row {
@@ -285,69 +272,69 @@ footer p em {
 }
 
 input[type="text"],
+input[type="number"],
 .form-button {
     padding: 0.3rem;
     font-size: 1rem;
     background-color: #d0dcdd;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[type="number"] {
-    width: 25px;
+    width: 4rem;
 }
 
 .button-row {
     display: flex;
     gap: 0.5rem;
     justify-content: flex-start;
-    /* لمحاذاة الأزرار بجانب بعضها */
 }
 
 #greeting {
     color: #bfe917;
-    /* لون فاتح ليكون مرئياً على الخلفية الداكنة */
     font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#loop-list {
+    align-self: center;
+    text-align: left;
+    color: #dddd1c;
     margin-top: 1rem;
 }
 
-
 #loop-list li {
+    margin-bottom: 8px;
     color: #f7f600;
-    /* Brighter yellow for readability */
     font-size: 1.1rem;
 }
 
 .form-button {
     padding: 0.5rem 1rem;
     background-color: #e4c3ad;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .form-button:hover {
     background-color: var(--dark-blue);
-    color: rgb(235, 232, 24);
+    color: #ebf818;
 }
-
-
-
-#loop-list {
-    align-self: center;
-    text-align: left;
-    color: #dddd1c;
-}
-
-#loop-list li {
-    margin-bottom: 8px;
-}
-
 
 .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: transparent;
+    display: flex;
 }
 
 .navbar li {
-    float: left;
     position: relative;
 }
 
@@ -357,6 +344,7 @@ input[type="number"] {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .navbar li a:hover {
