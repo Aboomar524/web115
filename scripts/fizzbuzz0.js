@@ -10,15 +10,34 @@ form.addEventListener("submit", function (event) {
     const greeting = document.getElementById("greeting");
     const loopList = document.getElementById("loop-list");
 
-    // Validate that the user has entered a name
-    if (!firstName || !lastName) {
-        alert("Please enter your first and last name.");
-        return;
-    }
+    let formValid = true;  // Flag to track form validity
 
     // Reset the greeting and clear the list
     greeting.textContent = "Welcome to Sweet Syria.";
     loopList.innerHTML = "";  // Clears previous list items
+
+    // Validate that the user has entered first name
+    if (!firstName) {
+        document.getElementById("first-name").style.border = "2px solid red";
+        alert("Please enter your first name.");
+        formValid = false;
+    } else {
+        document.getElementById("first-name").style.border = "";
+    }
+
+    // Validate that the user has entered last name
+    if (!lastName) {
+        document.getElementById("last-name").style.border = "2px solid red";
+        alert("Please enter your last name.");
+        formValid = false;
+    } else {
+        document.getElementById("last-name").style.border = "";
+    }
+
+    // If form is not valid, exit early
+    if (!formValid) {
+        return;
+    }
 
     // Update the greeting with the user's name
     greeting.textContent = `${greeting.textContent} ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}!`.replace(/\s+/g, " ").trim();
