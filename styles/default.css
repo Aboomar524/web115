@@ -79,8 +79,7 @@ figcaption {
 
 /* Header */
 header {
-    background-color: transparent;
-    padding: 125px;
+
     text-align: center;
 }
 
@@ -126,8 +125,6 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: transparent;
-    color: var(--pink);
     text-align: center;
     margin-top: 10px;
     width: 50%;
