@@ -14,9 +14,16 @@ form.addEventListener("submit", function (event) {
     const greeting = document.getElementById("greeting");
     const loopList = document.getElementById("loop-list");
 
-    // Validate user input
-    if (!firstName || !lastName) {
-        alert("Please enter your first and last name.");
+    // Validate user input for first and last name separately
+    if (!firstName) {
+        alert("Please enter your first name.");
+        document.getElementById("first-name").focus();  // Focus on the first name field
+        return;
+    }
+
+    if (!lastName) {
+        alert("Please enter your last name.");
+        document.getElementById("last-name").focus();  // Focus on the last name field
         return;
     }
 
