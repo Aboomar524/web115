@@ -257,10 +257,9 @@ footer p em {
 
 #name-form label {
     flex: 0 0 120px;
-    /* Fixed width for labels */
     text-align: right;
     white-space: nowrap;
-    /* Prevents wrapping */
+
 }
 
 .required {
@@ -272,13 +271,13 @@ footer p em {
     gap: 0.5rem;
     align-items: center;
     margin-bottom: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: left;
+
 }
 
 .name-row label {
     margin: 0;
-
+    justify-content: left;
 }
 
 #name-form div {
@@ -291,7 +290,7 @@ footer p em {
 input[type="text"],
 input[type="number"] {
     flex: 1 1 auto;
-    /* Allow inputs to grow */
+
     padding: 0.4rem;
     font-size: 1rem;
     background-color: #d0dcdd;
