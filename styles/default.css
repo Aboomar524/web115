@@ -18,6 +18,9 @@ body {
     box-sizing: border-box;
     background-color: var(--medium-gray);
     color: var(--pink);
+    font-size: 1.2rem;
+    align-items: center;
+    flex-direction: column;
 }
 
 header,
@@ -245,8 +248,19 @@ footer p em {
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin: auto;
+    margin: 2rem auto;
     align-items: center;
+    text-align: left;
+    max-width: 600px;
+
+}
+
+#name-form label {
+    flex: 0 0 120px;
+    /* Fixed width for labels */
+    text-align: right;
+    white-space: nowrap;
+    /* Prevents wrapping */
 }
 
 .required {
@@ -259,10 +273,12 @@ footer p em {
     align-items: center;
     margin-bottom: 1rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .name-row label {
     margin: 0;
+
 }
 
 #name-form div {
@@ -273,14 +289,17 @@ footer p em {
 }
 
 input[type="text"],
-input[type="number"],
-.form-button {
-    padding: 0.3rem;
+input[type="number"] {
+    flex: 1 1 auto;
+    /* Allow inputs to grow */
+    padding: 0.4rem;
     font-size: 1rem;
     background-color: #d0dcdd;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    min-width: 150px;
+    /* Ensure inputs are wide enough */
 }
 
 input[type="number"] {
@@ -295,9 +314,10 @@ input[type="number"] {
 
 #greeting {
     color: #bfe917;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    font-size: 2rem;
+    margin: 2rem auto;
     text-align: center;
+    max-width: 600px;
 }
 
 #loop-list {
@@ -305,6 +325,10 @@ input[type="number"] {
     text-align: left;
     color: #dddd1c;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+
 }
 
 #loop-list li {
@@ -315,12 +339,13 @@ input[type="number"] {
 
 .form-button {
     padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
     background-color: #e4c3ad;
     border: none;
-    cursor: pointer;
     border-radius: 4px;
+    cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-
 }
 
 .form-button:hover {
