@@ -4,42 +4,36 @@ const fizzBuzzBang = [{ 3: "yum!" }, { 5: "tasty!" }, { 7: "BANG!" }];
 const checkDivision = (firstDivisor, secondDivisor) => firstDivisor % secondDivisor === 0;
 
 form.addEventListener("submit", function (event) {
-    // Prevent form submission and page refresh
     event.preventDefault();
 
-    // Get the user input values
     const firstName = document.getElementById("first-name").value;
     const middleInitial = document.getElementById("middle-initial").value;
     const lastName = document.getElementById("last-name").value;
     const greeting = document.getElementById("greeting");
     const loopList = document.getElementById("loop-list");
 
-    // Validate user input for first and last name separately
     if (!firstName) {
         alert("Please enter your first name.");
-        document.getElementById("first-name").focus();  // Focus on the first name field
+        document.getElementById("first-name").focus();
         return;
     }
 
     if (!lastName) {
         alert("Please enter your last name.");
-        document.getElementById("last-name").focus();  // Focus on the last name field
+        document.getElementById("last-name").focus();
         return;
     }
 
-    // Update the greeting with the user's name
     greeting.textContent = `Welcome to Sweet Syria, ${firstName} ${middleInitial}${middleInitial ? "." : ""} ${lastName}!`
         .replace(/\s+/g, " ")
         .trim();
 
-    // Clear the previous list
     loopList.innerHTML = "";
 
-    // Get the count from the user
     let count;
     do {
         count = prompt(`How high do you like to count, ${firstName}?`);
-        console.log("Prompt value:", count);  // Debug log to check the prompt value
+        console.log("Prompt value:", count);
         if (isNaN(count) || count === null || count.trim() === "") {
             alert("Please enter a valid number.");
         } else {
@@ -48,30 +42,24 @@ form.addEventListener("submit", function (event) {
         }
     } while (true);
 
-    // Check if count is valid before proceeding
     if (count <= 0) {
         alert("Please enter a number greater than zero.");
         return;
     }
 
-    // Loop through each number up to the count
     for (let x = 1; x <= count; x++) {
         const listItem = document.createElement("li");
         let result = '';
 
-        // Check each number for divisibility against the fizzBuzzBang array
         for (const obj of fizzBuzzBang) {
             for (const [divisor, word] of Object.entries(obj)) {
                 if (checkDivision(x, Number(divisor))) {
-                    result += word + " "; // Concatenate the word if the number is divisible by the divisor
+                    result += word + " ";
                 }
             }
         }
 
-        // Include the number in the output, even if it's a multiple of 3, 5, or 7
         listItem.textContent = result ? `${x}: ${result.trim()}` : x;
-
-        // Add the list item to the loop list
         loopList.appendChild(listItem);
     }
 });
