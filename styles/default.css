@@ -378,6 +378,26 @@ input[type="number"] {
 }
 
 /* Main business card styles */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-card {
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .85em;
+    width: 20%;
+    min-width: 375px;
+    padding: 0;
+    background-image: radial-gradient(circle at bottom left, #3a9fe3 55%, #eaea0e, #15e5e5);
+}
+
 .business-card {
     border: 1px solid black;
     box-sizing: border-box;
@@ -388,6 +408,7 @@ input[type="number"] {
     margin: auto;
     padding: 0;
     background-image: radial-gradient(circle at bottom left, #3a9fe3 55%, #eaea0e, #15e5e5);
+
 }
 
 /* Name and Job Title styles */
